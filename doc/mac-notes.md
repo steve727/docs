@@ -91,3 +91,8 @@
         
  ### git api
    https://docs.github.com/en/free-pro-team@latest/rest/reference
+
+### get my public ip
+my_ip=$(dig +short myip.opendns.com @resolver1.opendns.com);
+echo $my_ip
+

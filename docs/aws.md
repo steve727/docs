@@ -400,5 +400,4 @@ aws logs delete-log-stream \
 ### Cloudwatch - Monitoring
 http://docs.aws.amazon.com/cli/latest/reference/cloudwatch/index.html
 
-
-
+http://docs.aws.amazon.com/cli/latest/reference/logs/delete-log-stream.html

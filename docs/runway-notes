@@ -13,8 +13,8 @@ vim sampleapp.cfn/dev-us-east-1.env
 
 ./runway gen-sample tf
 vim sampleapp.tf/backend-us-east-1.tfvars
-./runway init
-
     cfngin-steve-nice-us-east-1
     
 ./runway run-aws sts get-caller-identity
+
+

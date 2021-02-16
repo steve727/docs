@@ -6,6 +6,8 @@ mkdir nice-project
 cd nice-project
 curl -L https://oni.ca/runway/latest/osx -o runway
 chmod +x runway
+git init
+git checkout -b ENV-dev
 
 ./runway gen-sample cfngin
 vim sampleapp.cfn/dev-us-east-1.env

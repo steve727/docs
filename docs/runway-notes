@@ -17,4 +17,4 @@ vim sampleapp.tf/backend-us-east-1.tfvars
     
 ./runway run-aws sts get-caller-identity
 
-
+./runway tfenv install 0.14.6

@@ -18,13 +18,16 @@ uniq # show only unique entries
 paste # combine rows of text, by line
 join # combine rows of text, by initial column value
 
-### Cloudtrail - Logging and Auditing
+## Cloudtrail - Logging and Auditing
 
 ### list all trails
 aws cloudtrail describe-trails
 
 ### list all S3 buckets
 aws s3 ls
+
+### delete a bucket & contents
+aws s3 rb s3://bucket-name --force 
 
 ### create a new trail
 aws cloudtrail create-subscription \

@@ -1,4 +1,2 @@
-Placeholder for now
-
 # random
-date && whoami && uptime
+    date && whoami && uptime

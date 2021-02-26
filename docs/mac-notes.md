@@ -59,19 +59,22 @@
     terraform apply
 
 ### postman api
-    https://dl.pstmn.io/download/latest/osx
-    https://www.npmjs.com/package/newman 
-        brew install newman
-        https://www.npmjs.com/package/newman#command-line-options
+   https://dl.pstmn.io/download/latest/osx
+
+   https://www.npmjs.com/package/newman 
         
-    https://www.npmjs.com/package/newman
+        brew install newman
+        
+   https://www.npmjs.com/package/newman#command-line-options
+        
+   https://www.npmjs.com/package/newman
     
 ### 1Password cli
    https://cache.agilebits.com/dist/1P/op/pkg/v1.8.0/op_darwin_amd64_v1.8.0.pkg or
     brew install --cask 1password-cli
     
-    https://support.1password.com/command-line/
-    https://support.1password.com/command-line-reference/
+   https://support.1password.com/command-line/
+   https://support.1password.com/command-line-reference/
     
     op signin my.ent.1password.com <email_address> <secret_key> [--raw]
     export OP_SESSION_my"KEY"
@@ -93,7 +96,7 @@
    https://docs.github.com/en/free-pro-team@latest/rest/reference
 
 ### get my public ip
-my_ip=$(dig +short myip.opendns.com @resolver1.opendns.com);
-echo $my_ip
+    my_ip=$(dig +short myip.opendns.com @resolver1.opendns.com);
+    echo $my_ip
 
 

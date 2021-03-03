@@ -1,6 +1,6 @@
-## random
+### random stuff
 
-	date && whoami && uptime'
+	date && whoami && uptime
 
 ### Windows 2019 Admin Workstation tools & settings
 	
@@ -38,7 +38,7 @@
 
 [Azure Storage Explorer](https://go.microsoft.com/fwlink/?LinkId=708343&clcid=0x409)
 
-TODO:
+### TODO:
 
 	Chrome
 	DCNM Client

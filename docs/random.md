@@ -1,35 +1,29 @@
-# random
-    date && whoami && uptime
+## random
+	'date && whoami && uptime'
 
-## Windows 2019 Admin Workstation
+### Windows 2019 Admin Workstation tools & settings
+	'Import-Module ServerManager
+ 	'Install-WindowsFeature -Name RSAT-AD-Powershell'
 
-    Import-Module ServerManager
-    Install-WindowsFeature -Name RSAT-AD-Powershell
+[AdoptOpenJDK](https://adoptopenjdk.net/?variant=openjdk15&jvmVariant=hotspot)
 
-    AdoptOpenJDK
-    https://adoptopenjdk.net/?variant=openjdk15&jvmVariant=hotspot
+Install Chrome
 
-    Install Chrome
+[VMware plug-in](http://vsphereclient.vmware.com/vsphereclient/VMware-EnhancedAuthenticationPlugin-6.7.0.exe)
 
-    VMware plug-in
-    http://vsphereclient.vmware.com/vsphereclient/VMware-EnhancedAuthenticationPlugin-6.7.0.exe
+[Putty](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.74-installer.msi)
 
-    Putty
-    https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.74-installer.msi
+[Remote Desktop Manager Free](https://cdn.devolutions.net/download/Setup.RemoteDesktopManagerFree.2020.3.23.0.msi)
 
-    Remote Desktop Manager Free
-    https://cdn.devolutions.net/download/Setup.RemoteDesktopManagerFree.2020.3.23.0.msi
+[Winscp](https://winscp.net/download/WinSCP-5.17.9-Setup.exe)
 
-    Winscp
-    https://winscp.net/download/WinSCP-5.17.9-Setup.exe
+[1password](https://app-updates.agilebits.com/download/OPW7)
 
-    1password
-    https://app-updates.agilebits.com/download/OPW7
-
-    VSCode
-    https://code.visualstudio.com/docs/?dv=win64
-	    enable-crash-reporter = false
-	    telemetry.enableTelemetry = false
+[VSCode](https://code.visualstudio.com/docs/?dv=win64)
+	
+	'enable-crash-reporter = false'
+	
+	'telemetry.enableTelemetry = false'
 
     Postman
     https://dl.pstmn.io/download/latest/win64

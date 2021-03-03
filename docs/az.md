@@ -51,9 +51,11 @@ az vm list-sizes --location eastus2
     $ export ARM_SUBSCRIPTION_ID="00000000-0000-0000-0000-000000000000"
     $ export ARM_TENANT_ID="00000000-0000-0000-0000-000000000000"
 
-### Yeoman (create base tf template) https://github.com/azure/generator-az-terra-module
+### Yeoman
 
-[Refer to](https://docs.microsoft.com/en-us/azure/developer/terraform/create-base-template-using-yeoman)
+https://github.com/azure/generator-az-terra-module
+
+[Create a Terraform base template in Azure using Yeoman](https://docs.microsoft.com/en-us/azure/developer/terraform/create-base-template-using-yeoman)
 
 Install latest [Node LTS](https://nodejs.org). 
 

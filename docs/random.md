@@ -25,27 +25,19 @@ Install Chrome
 	
 	'telemetry.enableTelemetry = false'
 
-    Postman
-    https://dl.pstmn.io/download/latest/win64
+[Postman](https://dl.pstmn.io/download/latest/win64)
 
-    Git
-    https://github.com/git-for-windows/git/releases/download/v2.29.2.windows.3/Git-2.29.2.3-64-bit.exe
+[Git](https://github.com/git-for-windows/git/releases/download/v2.29.2.windows.3/Git-2.29.2.3-64-bit.exe)
 
-    awscli2
-    https://awscli.amazonaws.com/AWSCLIV2.msi
+[awscli2](https://awscli.amazonaws.com/AWSCLIV2.msi)
 
-    az cli
-    https://aka.ms/installazurecliwindows
+[az cli](https://aka.ms/installazurecliwindows)
 
-    Wireshark
-    https://1.na.dl.wireshark.org/win64/Wireshark-win64-3.4.2.exe
+[Wireshark](https://1.na.dl.wireshark.org/win64/Wireshark-win64-3.4.2.exe)
 
+[AngryIP Scanner](https://github.com/angryip/ipscan/releases/download/3.7.3/ipscan-3.7.3-setup.exe)
 
-    AngryIP Scanner
-    https://github.com/angryip/ipscan/releases/download/3.7.3/ipscan-3.7.3-setup.exe
-
-    Azure Storage Explorer
-    https://go.microsoft.com/fwlink/?LinkId=708343&clcid=0x409
+[Azure Storage Explorer](https://go.microsoft.com/fwlink/?LinkId=708343&clcid=0x409)
 
     DCNM Client
     Fiddler
@@ -54,9 +46,8 @@ Install Chrome
     RVTools
 
 ### Server builds
-	@('EnableLUA','ConsentPromptBehaviorAdmin','FilterAdministratorToken') | ForEach-Object{ ` Set-ItemProperty -Path            
-	REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System -Name $_ -Value 0 ;} ;Set-NetFirewallProfile -Profile 
-	Domain,Public,Private -Enabled False ;winrm qc -q ;winrm s winrm/config/client '@{TrustedHosts="*"}' ;Enable-PSRemoting -Confirm:$false
+
+	'@('EnableLUA','ConsentPromptBehaviorAdmin','FilterAdministratorToken') | ForEach-Object{ ` Set-ItemProperty -Path        	REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System -Name $_ -Value 0 ;} ;Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False ;winrm qc -q ;winrm s winrm/config/client '@{TrustedHosts="*"}' ;Enable-PSRemoting -Confirm:$false'
 
 ### Powershell
-	Get-AdUser -Filter * -Properties DisplayName | Select-Object DisplayName | Export-Csv 'c:\ad.csv'
+	'Get-AdUser -Filter * -Properties DisplayName | Select-Object DisplayName | Export-Csv 'c:\ad.csv''

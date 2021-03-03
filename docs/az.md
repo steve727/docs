@@ -56,10 +56,11 @@ az vm list-sizes --location eastus2
 2. `npm install -g yo`
 3. `npm install -g generator-az-terra-module`       
       
-        yo --version
-        mkdir GeneratorDocSample
-        cd GeneratorDocSample
-        yo az-terra-module
-        
-
+   `yo --version`
+   `mkdir GeneratorDocSample`
+   `cd GeneratorDocSample`
+   `yo az-terra-module`
+   `./env_setup.sh`
+   
+   
     

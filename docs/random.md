@@ -1,9 +1,9 @@
 ## random
-	'date && whoami && uptime'
+    'date && whoami && uptime'
 
 ### Windows 2019 Admin Workstation tools & settings
-	'Import-Module ServerManager
- 	'Install-WindowsFeature -Name RSAT-AD-Powershell'
+    'Import-Module ServerManager
+    'Install-WindowsFeature -Name RSAT-AD-Powershell'
 
 [AdoptOpenJDK](https://adoptopenjdk.net/?variant=openjdk15&jvmVariant=hotspot)
 
@@ -20,10 +20,9 @@ Install Chrome
 [1password](https://app-updates.agilebits.com/download/OPW7)
 
 [VSCode](https://code.visualstudio.com/docs/?dv=win64)
-	
-	'enable-crash-reporter = false'
-	
-	'telemetry.enableTelemetry = false'
+
+    'enable-crash-reporter = false'
+    'telemetry.enableTelemetry = false'
 
 [Postman](https://dl.pstmn.io/download/latest/win64)
 
@@ -48,8 +47,8 @@ Install Chrome
 ### Server builds
     @('EnableLUA','ConsentPromptBehaviorAdmin','FilterAdministratorToken') | ForEach-Object{ ` Set-ItemProperty -Path /
     REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System -Name $_ -Value 0 ;} /
-    ;Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False ;winrm qc -q ;winrm s winrm/config/client '@{TrustedHosts="*"}' /
-    ;Enable-PSRemoting -Confirm:$false'
+    ;Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False ;winrm qc -q ;winrm s winrm/config/client /
+    '@{TrustedHosts="*"}' ;Enable-PSRemoting -Confirm:$false'
 
 ### Powershell
     'Get-AdUser -Filter * -Properties DisplayName | Select-Object DisplayName | Export-Csv 'c:\ad.csv''

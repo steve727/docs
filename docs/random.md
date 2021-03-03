@@ -1,13 +1,11 @@
 ## random
-    'date && whoami && uptime'
+	'date && whoami && uptime'
 
 ### Windows 2019 Admin Workstation tools & settings
-    'Import-Module ServerManager
-    'Install-WindowsFeature -Name RSAT-AD-Powershell'
+	'Import-Module ServerManager
+	'Install-WindowsFeature -Name RSAT-AD-Powershell'
 
 [AdoptOpenJDK](https://adoptopenjdk.net/?variant=openjdk15&jvmVariant=hotspot)
-
-Install Chrome
 
 [VMware plug-in](http://vsphereclient.vmware.com/vsphereclient/VMware-EnhancedAuthenticationPlugin-6.7.0.exe)
 
@@ -21,8 +19,8 @@ Install Chrome
 
 [VSCode](https://code.visualstudio.com/docs/?dv=win64)
 
-    'enable-crash-reporter = false'
-    'telemetry.enableTelemetry = false'
+	'enable-crash-reporter = false'
+	'telemetry.enableTelemetry = false'
 
 [Postman](https://dl.pstmn.io/download/latest/win64)
 
@@ -38,11 +36,14 @@ Install Chrome
 
 [Azure Storage Explorer](https://go.microsoft.com/fwlink/?LinkId=708343&clcid=0x409)
 
-    DCNM Client
-    Fiddler
-    Office
-    Visual Studio
-    RVTools
+TODO:
+
+	Chrome
+	DCNM Client
+	Fiddler
+	Office
+	Visual Studio
+	RVTools
 
 ### Server builds
     @('EnableLUA','ConsentPromptBehaviorAdmin','FilterAdministratorToken') | ForEach-Object{ ` Set-ItemProperty -Path /

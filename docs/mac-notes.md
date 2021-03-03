@@ -21,10 +21,10 @@
     
   ## macOS setup notes
 
-    curl -O https://releases.hashicorp.com/terraform/0.14.6/terraform_0.14.6_darwin_amd64.zip
-    unzip terraform_0.14.6_darwin_amd64.zip
+    curl -O https://releases.hashicorp.com/terraform/0.14.7/terraform_0.14.7_darwin_amd64.zip
+    unzip terraform_0.14.7_darwin_amd64.zip
     mv terraform /usr/local/bin/
-    rm terraform_0.14.6_darwin_amd64.zip
+    rm terraform_0.14.7_darwin_amd64.zip
     
     echo $PATH
 
@@ -55,6 +55,7 @@
     terraform plan ... | landscape
 
 ### Terraform commands
+    terraform fmt
     terraform show
     terraform apply
 

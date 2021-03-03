@@ -50,3 +50,16 @@ az vm list-sizes --location eastus2
     $ export ARM_CLIENT_SECRET="00000000-0000-0000-0000-000000000000"
     $ export ARM_SUBSCRIPTION_ID="00000000-0000-0000-0000-000000000000"
     $ export ARM_TENANT_ID="00000000-0000-0000-0000-000000000000"
+
+### Yeoman (create base tf template) https://github.com/azure/generator-az-terra-module
+    node --version
+    npm install -g yo
+    npm install -g generator-az-terra-module
+    yo --version
+        mkdir GeneratorDocSample
+        cd GeneratorDocSample
+        yo az-terra-module
+        
+        
+        
+    

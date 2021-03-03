@@ -52,18 +52,15 @@ az vm list-sizes --location eastus2
     $ export ARM_TENANT_ID="00000000-0000-0000-0000-000000000000"
 
 ### Yeoman (create base tf template) https://github.com/azure/generator-az-terra-module
-1. Install latest [Node LTS](https://nodejs.org). node --version
-2. `npm install -g yo`
-3. `npm install -g generator-az-terra-module`       
-      
+Install latest [Node LTS](https://nodejs.org). 
+
+   `node --version`
+   `npm install -g yo`
+   `npm install -g generator-az-terra-module`       
    `yo --version`
-   
    `mkdir GeneratorDocSample`
-   
    `cd GeneratorDocSample`
-   
    `yo az-terra-module`
-   
    `./env_setup.sh`
    
    

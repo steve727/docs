@@ -23,6 +23,8 @@ telemetry.enableTelemetry = false
 ```
 [Postman](https://dl.pstmn.io/download/latest/win64)
 
+[Terraform](https://releases.hashicorp.com/terraform/0.14.7/terraform_0.14.7_windows_amd64.zip)
+
 [Git](https://github.com/git-for-windows/git/releases/download/v2.29.2.windows.3/Git-2.29.2.3-64-bit.exe)
 
 [awscli2](https://awscli.amazonaws.com/AWSCLIV2.msi)

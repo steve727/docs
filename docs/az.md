@@ -45,7 +45,7 @@ az group create --location eastus --name steve-dev
 
 az vm list-sizes --location eastus2
 
-## client_secret vars for TF Azure Provider - store in vault
+## client_secret env vars for TF Azure Provider - store in keyvault
     $ export ARM_CLIENT_ID="00000000-0000-0000-0000-000000000000"
     $ export ARM_CLIENT_SECRET="00000000-0000-0000-0000-000000000000"
     $ export ARM_SUBSCRIPTION_ID="00000000-0000-0000-0000-000000000000"
@@ -58,22 +58,13 @@ https://github.com/azure/generator-az-terra-module
 [Create a Terraform base template in Azure using Yeoman](https://docs.microsoft.com/en-us/azure/developer/terraform/create-base-template-using-yeoman)
 
 Install latest [Node LTS](https://nodejs.org). 
-
-`node --version`
-
-`npm install -g yo`
-
-`npm install -g generator-az-terra-module`       
-
-`yo --version`
-
-`mkdir GeneratorDocSample`
-
-`cd GeneratorDocSample`
-
-`yo az-terra-module`
-
-`./env_setup.sh`
-   
-   
-    
+```
+node --version
+npm install -g yo
+npm install -g generator-az-terra-module
+yo --version
+mkdir GeneratorDocSample
+cd GeneratorDocSample
+yo az-terra-module
+./env_setup.sh
+```

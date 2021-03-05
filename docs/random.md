@@ -1,0 +1,2 @@
+## random
+`date && whoami && uptime`

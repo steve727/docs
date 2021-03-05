@@ -2,7 +2,8 @@
 `date && whoami && uptime`
 
 ### Windows Admin Workstation Tools & other usual apps for d2d ops
-```Import-Module ServerManager
+```
+Import-Module ServerManager
 Install-WindowsFeature -Name RSAT-AD-Powershell
 ```
 

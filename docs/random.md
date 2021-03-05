@@ -20,10 +20,10 @@ Install-WindowsFeature -Name RSAT-AD-Powershell
 [1password](https://app-updates.agilebits.com/download/OPW7)
 
 [VSCode](https://code.visualstudio.com/docs/?dv=win64)
-
-	enable-crash-reporter = false
-	telemetry.enableTelemetry = false
-
+```
+enable-crash-reporter = false
+telemetry.enableTelemetry = false
+```
 [Postman](https://dl.pstmn.io/download/latest/win64)
 
 [Git](https://github.com/git-for-windows/git/releases/download/v2.29.2.windows.3/Git-2.29.2.3-64-bit.exe)

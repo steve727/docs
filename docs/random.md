@@ -1,11 +1,10 @@
 ### random stuff
-
-	date && whoami && uptime
+`date && whoami && uptime`
 
 ### Windows Admin Workstation Tools & other usual apps for d2d ops
-	
-	Import-Module ServerManager
-	Install-WindowsFeature -Name RSAT-AD-Powershell
+```Import-Module ServerManager
+Install-WindowsFeature -Name RSAT-AD-Powershell
+```
 
 [AdoptOpenJDK](https://adoptopenjdk.net/?variant=openjdk15&jvmVariant=hotspot)
 

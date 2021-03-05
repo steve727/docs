@@ -3,10 +3,10 @@
 [![Launch Cloud Shell](https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/launchcloudshell.png "Launch Cloud Shell")](https://shell.azure.com)
 
 ## Run Azure CLI in Docker
-```
-docker run -it mcr.microsoft.com/azure-cli
-docker run -it -v ${HOME}/.ssh:/root/.ssh mcr.microsoft.com/azure-cli  
-```
+`docker run -it mcr.microsoft.com/azure-cli`
+
+`docker run -it -v ${HOME}/.ssh:/root/.ssh mcr.microsoft.com/azure-cli`
+
 ## Update Docker image
 `docker pull mcr.microsoft.com/azure-cli`
     

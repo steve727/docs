@@ -7,11 +7,13 @@
     xcode-select --install
 
 ### Openssl
-    brew install openssl
+`brew install openssl`
     
-    'export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"'
-    'export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"'
-    'echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.zshrc'
+`export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"`
+
+`export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"`
+
+`echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.zshrc`
   
     brew doctor
     brew cleanup

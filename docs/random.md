@@ -1,4 +1,4 @@
-### random stuff
+## random
 `date && whoami && uptime`
 
 ### Windows Admin Workstation Tools & other usual apps for d2d ops
@@ -40,19 +40,20 @@ telemetry.enableTelemetry = false
 
 ### TODO:
 
-	Chrome
-	DCNM Client
+Chrome
+    
+    DCNM Client
 	Fiddler
 	Office
 	Visual Studio
 	RVTools
 
 ### Server builds
-
+```
 	@('EnableLUA','ConsentPromptBehaviorAdmin','FilterAdministratorToken') | ForEach-Object{ ` Set-ItemProperty -Path /
 	REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System -Name $_ -Value 0 ;} /
 	;Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False ;winrm qc -q ;winrm s winrm/config/client /
 	'@{TrustedHosts="*"}' ;Enable-PSRemoting -Confirm:$false'
-
+```
 ### Powershell
 	'Get-AdUser -Filter * -Properties DisplayName | Select-Object DisplayName | Export-Csv 'c:\ad.csv''

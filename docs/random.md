@@ -2,7 +2,7 @@
 
 	date && whoami && uptime
 
-### Windows 2019 Admin Workstation tools & settings
+### Windows Admin Workstation Tools & other usual apps for d2d ops
 	
 	Import-Module ServerManager
 	Install-WindowsFeature -Name RSAT-AD-Powershell

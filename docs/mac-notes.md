@@ -9,9 +9,9 @@
 ### Openssl
     brew install openssl
     
-      export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
-      export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
-      echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.zshrc
+    'export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"'
+    'export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"'
+    'echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.zshrc'
   
     brew doctor
     brew cleanup
@@ -73,6 +73,7 @@
 ### 1Password cli
     
 [1Password cli](https://support.1password.com/command-line/)
+
 [1Password cli reference](https://support.1password.com/command-line-reference/)
 
     brew install --cask 1password-cli
@@ -82,7 +83,7 @@
     eval $(op signin my)
     op list items
     
-### git 
+### ssh cert for git 
     ssh-keygen -t ed25519 -C "email_address"
     eval "$(ssh-agent -s)"
     touch ~/.ssh/config
@@ -95,7 +96,7 @@
         
 [git api](https://docs.github.com/en/free-pro-team@latest/rest/reference)
 
-### get my public ip
+### get public ip
     my_ip=$(dig +short myip.opendns.com @resolver1.opendns.com);
     echo $my_ip
 

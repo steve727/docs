@@ -1,10 +1,10 @@
 ### Install Homebrew 
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
     
-    brew --version
+`brew --version`
     
 ### Install developer tools
-    xcode-select --install
+`xcode-select --install`
 
 ### Openssl
 `brew install openssl`
@@ -15,18 +15,18 @@
 
 `echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.zshrc`
   
-    brew doctor
-    brew cleanup
+`brew doctor`
+    
+`brew cleanup`
 
 ### Magic packet
-    brew install wakeonlan
+`brew install wakeonlan`
     
-  ## macOS setup notes
-
-    curl -O https://releases.hashicorp.com/terraform/0.14.7/terraform_0.14.7_darwin_amd64.zip
-    unzip terraform_0.14.7_darwin_amd64.zip
-    mv terraform /usr/local/bin/
-    rm terraform_0.14.7_darwin_amd64.zip
+## macOS setup notes
+`curl -O https://releases.hashicorp.com/terraform/0.14.7/terraform_0.14.7_darwin_amd64.zip`
+`unzip terraform_0.14.7_darwin_amd64.zip`
+`mv terraform /usr/local/bin/`
+`rm terraform_0.14.7_darwin_amd64.zip`
     
     echo $PATH
 

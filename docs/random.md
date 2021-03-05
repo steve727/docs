@@ -39,21 +39,20 @@ telemetry.enableTelemetry = false
 [Azure Storage Explorer](https://go.microsoft.com/fwlink/?LinkId=708343&clcid=0x409)
 
 ### TODO:
-
+```
 Chrome
-    
-    DCNM Client
-	Fiddler
-	Office
-	Visual Studio
-	RVTools
-
+DCNM Client
+Fiddler
+Office
+Visual Studio
+RVTools
+```
 ### Server builds
 ```
-	@('EnableLUA','ConsentPromptBehaviorAdmin','FilterAdministratorToken') | ForEach-Object{ ` Set-ItemProperty -Path /
-	REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System -Name $_ -Value 0 ;} /
-	;Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False ;winrm qc -q ;winrm s winrm/config/client /
-	'@{TrustedHosts="*"}' ;Enable-PSRemoting -Confirm:$false'
+@('EnableLUA','ConsentPromptBehaviorAdmin','FilterAdministratorToken') | ForEach-Object{ ` Set-ItemProperty -Path /
+REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System -Name $_ -Value 0 ;} /
+;Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False ;winrm qc -q ;winrm s winrm/config/client /
+'@{TrustedHosts="*"}' ;Enable-PSRemoting -Confirm:$false'
 ```
 ### Powershell
-	'Get-AdUser -Filter * -Properties DisplayName | Select-Object DisplayName | Export-Csv 'c:\ad.csv''
+'Get-AdUser -Filter * -Properties DisplayName | Select-Object DisplayName | Export-Csv 'c:\ad.csv''

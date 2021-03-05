@@ -69,13 +69,13 @@
    https://www.npmjs.com/package/newman#command-line-options
         
    https://www.npmjs.com/package/newman
-    
+
 ### 1Password cli
-   https://cache.agilebits.com/dist/1P/op/pkg/v1.8.0/op_darwin_amd64_v1.8.0.pkg or
-    brew install --cask 1password-cli
     
-   https://support.1password.com/command-line/
-   https://support.1password.com/command-line-reference/
+[1Password cli](https://support.1password.com/command-line/)
+[1Password cli reference](https://support.1password.com/command-line-reference/)
+
+    brew install --cask 1password-cli
     
     op signin my.ent.1password.com <email_address> <secret_key> [--raw]
     export OP_SESSION_my"KEY"
@@ -93,8 +93,7 @@
         IdentityFile ~/.ssh/id_ed25519    
         ssh-add -K ~/.ssh/id_ed25519
         
- ### git api
-   https://docs.github.com/en/free-pro-team@latest/rest/reference
+[git api](https://docs.github.com/en/free-pro-team@latest/rest/reference)
 
 ### get my public ip
     my_ip=$(dig +short myip.opendns.com @resolver1.opendns.com);

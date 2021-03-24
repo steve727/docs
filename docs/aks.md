@@ -18,7 +18,7 @@ chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 
 # AKS info
-server: https://cuzy725r-k8s-224e3c93.hcp.eastus2.azmk8s.io:443
+server: xx
     
     cluster: clustername-aks
     user: clusterUser-aks
@@ -30,7 +30,7 @@ kubectl create clusterrolebinding kubernetes-dashboard --clusterrole=cluster-adm
 
 # Browse AKS and enable addons
 
-az aks browse --subscription subname -g AHS-Steve-TF-Dev-rg -n clustername-aks
+az aks browse --subscription subname -g steve727-aks-dev -n clustername-aks
 
 az aks enable-addons --addons kube-dashboard --subscription subname -g rgname -n clustername-aks
 

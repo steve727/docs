@@ -1,4 +1,4 @@
-# K8s manual build steps
+# k8s cluster manual build steps
 
 ## All nodes:
 ```shell

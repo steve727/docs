@@ -47,7 +47,7 @@ EOF
 
 ## Control plane nodes:
 
-`sudo kubeadm init --pod-network-cidr 192.168.0.0/16`
+`sudo kubeadm init --pod-network-cidr x.x.x.x/16`
 ```shell
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
@@ -65,7 +65,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 ## Worker nodes:
 
-`sudo kubeadm join 10.0.1.101:6443 --token xx --discovery-token-ca-cert-hash sha256:xx`
+`sudo kubeadm join x.x.x.x:6443 --token xx --discovery-token-ca-cert-hash sha256:xx`
 
 `kubectl create namespace dev`
 

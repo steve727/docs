@@ -1,6 +1,6 @@
 # K8s manual build steps
 
-### All nodes
+## All nodes:
 ```shell
 cat <<EOF | sudo tee /etc/modules-load.d/containerd.conf
 overlay
@@ -45,7 +45,7 @@ EOF
 
 `sudo apt-get install -y kubelet=1.20.1-00 kubeadm=1.20.1-00 kubectl=1.20.1-00`
 
-### Control plane nodes 
+## Control plane nodes:
 
 `sudo kubeadm init --pod-network-cidr 192.168.0.0/16`
 ```shell
@@ -59,11 +59,11 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 `kubectl get pods -n kube-system`
 
-### Control Plane
+## Control plane:
 
 `kubeadm token create --print-join-command`
 
-### Worker nodes
+## Worker nodes:
 
 `sudo kubeadm join 10.0.1.101:6443 --token xx --discovery-token-ca-cert-hash sha256:xx`
 

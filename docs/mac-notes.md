@@ -62,6 +62,9 @@
     terraform show
     terraform apply
 
+### Consul
+    https://releases.hashicorp.com/consul/1.9.4/consul_1.9.4_darwin_amd64.zip
+    
 ### postman api
    https://dl.pstmn.io/download/latest/osx
 

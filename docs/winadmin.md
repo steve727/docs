@@ -37,6 +37,8 @@ telemetry.enableTelemetry = false
 
 [Azure Storage Explorer](https://go.microsoft.com/fwlink/?LinkId=708343&clcid=0x409)
 
+[Rufus](https://github.com/pbatard/rufus/releases/download/v3.13/rufus-3.13.exe)
+
 ### TODO:
 ```
 Chrome

@@ -32,3 +32,17 @@
     CREATE DATABASE rigstats
     USE rigstats
     
+### changes
+```shell
+apt update
+apt upgrade
+apt install sudo
+usermod -aG sudo steve
+apt install wget
+apt install curl
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+apt install ./google-chrome-stable_current_amd64.deb
+mv google-chrome-stable_current_amd64.deb /home/steve/Downloads
+https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
+apt install ./code_1.54.3-1615806378_amd64.deb
+```

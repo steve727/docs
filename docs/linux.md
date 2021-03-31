@@ -33,7 +33,7 @@ rpm -qa kernel\* |sort -V
 dnf remove $(dnf repoquery --installonly --latest-limit=-2 -q)
 ```
     
-# For Templates
+### For Templates
 ```shell
 sudo -i sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 sudo -i sed -i 's/#PasswordAuthentication/PasswordAuthentication/g' /etc/ssh/sshd_config

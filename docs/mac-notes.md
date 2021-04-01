@@ -23,12 +23,13 @@
 `brew install wakeonlan`
     
 ## macOS setup notes
+
 ```shell
 curl -O https://releases.hashicorp.com/terraform/0.14.9/terraform_0.14.9_darwin_amd64.zip
 unzip terraform_0.14.9_darwin_amd64.zip
 mv terraform /usr/local/bin/
 rm terraform_0.14.9_darwin_amd64.zip
-'''
+```
     
     echo $PATH
 

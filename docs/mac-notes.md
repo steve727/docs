@@ -23,10 +23,10 @@
 `brew install wakeonlan`
     
 ## macOS setup notes
-`curl -O https://releases.hashicorp.com/terraform/0.14.7/terraform_0.14.7_darwin_amd64.zip`
-`unzip terraform_0.14.7_darwin_amd64.zip`
+`curl -O https://releases.hashicorp.com/terraform/0.14.9/terraform_0.14.9_darwin_amd64.zip`
+`unzip terraform_0.14.9_darwin_amd64.zip`
 `mv terraform /usr/local/bin/`
-`rm terraform_0.14.7_darwin_amd64.zip`
+`rm terraform_0.14.9_darwin_amd64.zip`
     
     echo $PATH
 
@@ -105,5 +105,4 @@
 ### get public ip
     my_ip=$(dig +short myip.opendns.com @resolver1.opendns.com);
     echo $my_ip
-
-
+    

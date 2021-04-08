@@ -1,2 +1,0 @@
-## random
-`date && whoami && uptime`

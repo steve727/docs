@@ -46,6 +46,7 @@ mv google-chrome-stable_current_amd64.deb /home/steve/Downloads
 https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
 apt install ./code_1.54.3-1615806378_amd64.deb
 sudo apt install python3-pip
+pip3 install tidal-dl --upgrade
 ```
 
 

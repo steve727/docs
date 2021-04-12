@@ -6,7 +6,7 @@
     sudo reboot
     
 ### packages
-    apt install build-essential cmake libuv1-dev libssl-dev libhwloc-dev
+    apt install build-essential cmake libuv1-dev libssl-dev libhwloc-dev python3-pip
 
 ### xmrig install
     sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
@@ -45,4 +45,9 @@ apt install ./google-chrome-stable_current_amd64.deb
 mv google-chrome-stable_current_amd64.deb /home/steve/Downloads
 https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
 apt install ./code_1.54.3-1615806378_amd64.deb
+sudo apt install python3-pip
 ```
+
+
+
+

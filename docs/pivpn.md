@@ -34,3 +34,4 @@ fail2ban jail: `/var/log/fail2ban.log`
 ```bash
 sudo curl -sSL https://install.pi-hole.net | bash
 ```
+http://192.168.222.1/admin

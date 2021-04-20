@@ -26,6 +26,12 @@ sudo apt-get install virtualbox-6.1
 sudo /sbin/vboxconfig
 virtualbox 
 ```
+### [Remote Desktop Manager Free](https://remotedesktopmanager.com/home/download)
+```bash
+curl -O https://remotedesktopmanager.com/home/thankyou/rdmlinuxfreebin
+sudo dpkg -i RemoteDesktopManager.Free_2021.1.0.10_amd64.deb
+```
+
 ### mount ntfs drives (read)
 ```
 sudo fdisk -l | grep NTFS

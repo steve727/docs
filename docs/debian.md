@@ -30,6 +30,7 @@ virtualbox
 ```bash
 curl -O https://remotedesktopmanager.com/home/thankyou/rdmlinuxfreebin
 sudo dpkg -i RemoteDesktopManager.Free_2021.1.0.10_amd64.deb
+remotedesktopmanager.free
 ```
 
 ### mount ntfs drives (read)

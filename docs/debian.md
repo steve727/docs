@@ -26,6 +26,13 @@ sudo apt-get install virtualbox-6.1
 sudo /sbin/vboxconfig
 virtualbox 
 ```
+### mount ntfs drives (read)
+```
+sudo fdisk -l | grep NTFS
+sudo mkdir /mnt/ntfs
+sudo mount -t ntfs /dev/sdb1 /mnt/ntfs
+cd /mnt/ntfs
+```
 
 ### config changes
     sudo bash -c "echo vm.nr_hugepages=1280 >> /etc/sysctl.conf"
@@ -60,7 +67,3 @@ apt install ./code_1.54.3-1615806378_amd64.deb
 sudo apt install python3-pip
 pip3 install tidal-dl --upgrade
 ```
-
-
-
-

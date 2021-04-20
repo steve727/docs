@@ -14,6 +14,16 @@
     mkdir xmrig/build && cd xmrig/build
     cmake ..
     make -j$(nproc)
+    
+### [Virtualbox](https://www.virtualbox.org/wiki/Linux_Downloads)
+```bash
+vim /etc/apt/sources.list
+    deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian buster contrib
+
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install virtualbox-6.1
+```
 
 ### config changes
     sudo bash -c "echo vm.nr_hugepages=1280 >> /etc/sysctl.conf"

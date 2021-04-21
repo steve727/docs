@@ -25,10 +25,10 @@
 ## macOS setup notes
 
 ```shell
-curl -O https://releases.hashicorp.com/terraform/0.14.9/terraform_0.14.9_darwin_amd64.zip
-unzip terraform_0.14.9_darwin_amd64.zip
+curl -O https://releases.hashicorp.com/terraform/0.15.0/terraform_0.15.0_darwin_amd64.zip
+unzip terraform_0.15.0_darwin_amd64.zip
 mv terraform /usr/local/bin/
-rm terraform_0.14.9_darwin_amd64.zip
+rm terraform_0.15.0_darwin_amd64.zip
 ```
     
     echo $PATH

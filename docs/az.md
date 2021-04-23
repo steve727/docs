@@ -1,5 +1,11 @@
 # az cli
 
+## az version
+```bash
+az version
+az upgrade
+```
+
 [![Launch Cloud Shell](https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/launchcloudshell.png "Launch Cloud Shell")](https://shell.azure.com)
 
 ## Run Azure CLI in Docker

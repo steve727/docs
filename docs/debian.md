@@ -6,7 +6,7 @@
     sudo reboot
     
 ### packages
-    apt install build-essential cmake libuv1-dev libssl-dev libhwloc-dev python3-pip sysstat
+    apt install build-essential cmake libuv1-dev libssl-dev libhwloc-dev python3-pip sysstat iotop dstat atop ioping
 
 ### xmrig install
     sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev

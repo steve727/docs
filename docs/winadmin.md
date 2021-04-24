@@ -56,6 +56,8 @@ telemetry.enableTelemetry = false
 
 [Rufus](https://github.com/pbatard/rufus/releases/download/v3.13/rufus-3.13.exe)
 
+[RVTools](https://www.robware.net/rvtools/download)
+
 ### TODO:
 ```
 Chrome
@@ -63,7 +65,6 @@ DCNM Client
 Fiddler
 Office
 Visual Studio
-RVTools
 ```
 ### Server builds
 ```

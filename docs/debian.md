@@ -32,7 +32,7 @@ curl -O https://remotedesktopmanager.com/home/thankyou/rdmlinuxfreebin
 sudo dpkg -i RemoteDesktopManager.Free_2021.1.0.10_amd64.deb
 remotedesktopmanager.free
 ```
-### terraform
+### [Terraform](https://releases.hashicorp.com/terraform)
 ```bash
 curl -O https://releases.hashicorp.com/terraform/0.15.0/terraform_0.15.0_linux_amd64.zip
 unzip terraform_0.15.0_linux_amd64.zip

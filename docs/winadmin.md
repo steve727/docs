@@ -56,7 +56,7 @@ telemetry.enableTelemetry = false
 
 [Rufus](https://github.com/pbatard/rufus/releases/download/v3.13/rufus-3.13.exe)
 
-[RVTools](https://www.robware.net/rvtools/download)
+[RVTools 4.1.3](https://www.robware.net/rvtools/download)
 
 ### TODO:
 ```

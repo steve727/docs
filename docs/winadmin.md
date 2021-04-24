@@ -73,4 +73,7 @@ REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\
 '@{TrustedHosts="*"}' ;Enable-PSRemoting -Confirm:$false'
 ```
 ### Powershell
-'Get-AdUser -Filter * -Properties DisplayName | Select-Object DisplayName | Export-Csv 'c:\ad.csv''
+`Get-AdUser -Filter * -Properties DisplayName | Select-Object DisplayName | Export-Csv 'c:\ad.csv'`
+
+### Install updates
+`Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot`

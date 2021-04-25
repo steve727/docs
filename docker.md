@@ -9,6 +9,7 @@ docker run hello-world
 ```
 ### docker commands
 `docker container ls`
+
 `docker container exec -it friendly_kare /bin/bash`
 
 ### docker repo for rhel

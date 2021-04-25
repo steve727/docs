@@ -6,6 +6,8 @@ sudo yum -y install docker-ce
 sudo systemctl enable --now docker
 sudo usermod -aG docker cloud_user
 docker run hello-world
+```
+`docker container exec -it friendly_kare /bin/bash`
 ```    
 ### docker repo for rhel
 ``` bash

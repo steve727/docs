@@ -8,9 +8,12 @@ sudo usermod -aG docker cloud_user
 docker run hello-world
 ```
 ### docker commands
-`docker container ls`
-
-`docker container exec -it friendly_kare /bin/bash`
+```
+docker container ls
+docker container exec -it friendly_kare /bin/bash
+apt install zabbix-cli
+```
+[zabbix](https://www.zabbix.com/documentation/current/manual/installation/containers)
 
 ### docker repo for rhel
 ```bash

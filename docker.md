@@ -8,9 +8,9 @@ sudo usermod -aG docker cloud_user
 docker run hello-world
 ```
 `docker container exec -it friendly_kare /bin/bash`
-```    
+
 ### docker repo for rhel
-``` bash
+```bash
 sudo yum-config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo
 ```
 ### ubuntu

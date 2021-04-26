@@ -18,7 +18,7 @@ du -sh /var/cache/apt/archives
 sudo apt-get clean
 ```
 ### packages
-`apt install build-essential cmake libuv1-dev libssl-dev libhwloc-dev python3-pip sysstat iotop dstat atop ioping`
+`apt install build-essential cmake libuv1-dev libssl-dev libhwloc-dev python3-pip sysstat iotop dstat atop ioping net-tools`
 
 ### xmrig install
 ```

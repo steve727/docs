@@ -52,3 +52,11 @@ php_value[date.timezone] = America/NewYork
 systemctl restart zabbix-server zabbix-agent nginx php7.3-fpm
 systemctl enable zabbix-server zabbix-agent nginx php7.3-fpm
 ```
+### php
+```
+sudo apt -y install php php-common
+php -v
+```
+
+
+

@@ -45,7 +45,7 @@ sudo vim /etc/zabbix/nginx.conf
 ### set timezone
 ```bash
 sudo vim /etc/zabbix/php-fpm.conf
-php_value[date.timezone] = America/NewYork
+php_value[date.timezone] = America/New_York
 ```
 ### Start Zabbix server and agent processes and make it start at system boot
 ```bash

@@ -6,6 +6,10 @@
 sudo systemctl set-default graphical.target
 sudo reboot
 ```
+
+### zsh
+`chsh -s /usr/bin/zsh` or `chsh -s `which zsh`
+
 ### sources
 `cat /etc/apt/sources.list`
 

@@ -9,6 +9,9 @@ sudo reboot
 ### find the largest files or folders
 `du -a / | sort -n -r | head -n 10`
 
+### directory sizes
+`ls | xargs -I {} du -shx {}`
+
 ### clear apt cache
 ```
 du -sh /var/cache/apt/archives

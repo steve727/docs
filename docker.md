@@ -15,6 +15,10 @@ apt install zabbix-cli
 ```
 [zabbix](https://www.zabbix.com/documentation/current/manual/installation/containers)
 
+### images
+`docker images ls`
+
+
 ### docker repo for rhel
 ```bash
 sudo yum-config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo

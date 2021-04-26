@@ -17,11 +17,11 @@ docker images -a
 docker container ls
 docker container exec -it [container name] /bin/bash
 ```
-
-### prune docker /var/lib/docker/overlay2
-`docker system prune -a -f`
-
-
+### prune /var/lib/docker/overlay2
+```
+du -sch /var/lib/docker/overlay2/*
+docker system prune -a -f
+```
 [zabbix](https://www.zabbix.com/documentation/current/manual/installation/containers)
 
 

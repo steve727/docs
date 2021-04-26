@@ -24,11 +24,10 @@ docker system prune -a -f
 ```
 [zabbix](https://www.zabbix.com/documentation/current/manual/installation/containers)
 
-
-
 ### images
 `docker images ls`
-
+### remove volumes
+`docker volume rm $(docker volume ls -qf dangling=true)`
 
 ### docker repo for rhel
 ```bash
@@ -41,7 +40,7 @@ sudo yum-config-manager --add-repo https://download.docker.com/linux/rhel/docker
 ```
 docker tag local-image:tagname new-repo:tagname
 docker push new-repo:tagname
-docker push steve727/docker-repo:tagname
+docker push steve727/devcontainer:tagname
 ```    
 ### docker [nginx](https://hub.docker.com/_/nginx) - http://localhost:8080/
 ```

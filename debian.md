@@ -6,6 +6,9 @@
 sudo systemctl set-default graphical.target
 sudo reboot
 ```
+### sources
+`cat /etc/apt/sources.list`
+
 ### find the largest files or folders
 `du -a / | sort -n -r | head -n 10`
 

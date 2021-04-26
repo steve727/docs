@@ -8,7 +8,10 @@ sudo reboot
 ```
 
 ### zsh
-`chsh -s /usr/bin/zsh` or `chsh -s `which zsh` `
+```bash
+chsh -s /usr/bin/zsh 
+chsh -s `which zsh`
+```
 
 ### sources
 `cat /etc/apt/sources.list`

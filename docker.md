@@ -23,6 +23,9 @@ du -sch /var/lib/docker/overlay2/*
 docker system prune -a -f
 docker system prune --all --volumes --force
 ```
+### delete logs
+`find /var/lib/docker/containers/ -type f -name “*.log” -delete`
+
 [zabbix](https://www.zabbix.com/documentation/current/manual/installation/containers)
 
 ### images

@@ -20,6 +20,9 @@ sudo systemctl enable --now docker
 sudo usermod -aG docker cloud_user
 docker run hello-world
 ```
+### build .devcontainer
+`docker build -t steve727/devcontainer .`
+
 ### show containers and images
 ```
 docker ps -a

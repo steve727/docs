@@ -1,4 +1,4 @@
-### install dockeer engine & docker-compose on debian
+### install docker engine & docker-compose on debian
 ```zsh
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
@@ -8,6 +8,8 @@ sudo groupadd docker
 sudo usermod -aG docker steve
 newgrp docker
 docker run hello-world
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
 ```
 ### install docker (CentOS)
 ```

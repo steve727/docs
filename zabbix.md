@@ -57,6 +57,14 @@ systemctl enable zabbix-server zabbix-agent nginx php7.3-fpm
 sudo apt -y install php php-common
 php -v
 ```
-
-
-
+### nginx
+```bash
+sudo apt install curl gnupg2 ca-certificates lsb-release
+echo "deb http://nginx.org/packages/mainline/debian `lsb_release -cs` nginx" \
+    | sudo tee /etc/apt/sources.list.d/nginx.list
+```
+### packages
+```
+sudo apt-get install software-properties-common
+sudo apt install php7.3-fpm php7.3-common php7.3-mysql php7.3-gmp php7.3-curl php7.3-intl php7.3-mbstring php7.3-xmlrpc php7.3-gd php7.3-xml php7.3-cli php7.3-zip php7.3-soap php7.3-imap
+```

@@ -7,13 +7,24 @@ sudo systemctl enable --now docker
 sudo usermod -aG docker cloud_user
 docker run hello-world
 ```
-### docker commands
+### show containers and images
+```
+docker ps -a
+docker images -a
+```
+### container commands
 ```
 docker container ls
-docker container exec -it friendly_kare /bin/bash
-apt install zabbix-cli
+docker container exec -it [container name] /bin/bash
 ```
+
+### prune docker /var/lib/docker/overlay2
+`docker system prune -a -f`
+
+
 [zabbix](https://www.zabbix.com/documentation/current/manual/installation/containers)
+
+
 
 ### images
 `docker images ls`

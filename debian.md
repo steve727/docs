@@ -6,6 +6,9 @@
 sudo systemctl set-default graphical.target
 sudo reboot
 ```
+### find the largest files or folders
+`du -a / | sort -n -r | head -n 10`
+
 ### clear apt cache
 ```
 du -sh /var/cache/apt/archives

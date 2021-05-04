@@ -28,7 +28,7 @@
 
 View blocked ips: `sudo iptables -L -n`
 
-fail2ban jail: `/var/log/fail2ban.log`
+fail2ban jail: `cat /var/log/fail2ban.log`
 
 ## [Pi-hole automated install](https://github.com/pi-hole/pi-hole/#one-step-automated-install)
 ```bash

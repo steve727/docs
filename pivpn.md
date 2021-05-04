@@ -10,9 +10,9 @@
 8. Set a static ip `vi /etc/dhcpcd.conf`
 		
 		interface eth0
-		static ip_address=192.168.222.1/24
-		static routers=192.168.222.254
-		static domain_name_servers=192.168.222.254
+		static ip_address=x.x.x.x/24
+		static routers=x.x.x.x
+		static domain_name_servers=x.x.x.x
 
 9. [PiVPN](https://www.pivpn.io/) install `curl -L https://install.pivpn.io | bash`
 10. Run `pivpn add nopass` to add user profiles which are stored in `/home/pi/ovpns`
@@ -34,7 +34,8 @@ fail2ban jail: `cat /var/log/fail2ban.log`
 ```bash
 sudo curl -sSL https://install.pi-hole.net | bash
 ```
-http://192.168.222.1/admin
+### Admin console
+`http://x.x.x.x/admin`
 
 ### Update Pi-hole
 `pihole -up`

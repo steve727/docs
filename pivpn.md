@@ -35,3 +35,6 @@ fail2ban jail: `/var/log/fail2ban.log`
 sudo curl -sSL https://install.pi-hole.net | bash
 ```
 http://192.168.222.1/admin
+
+### Update Pi-hole
+`pihole -up`

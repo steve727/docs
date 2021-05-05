@@ -129,4 +129,4 @@ sudo rm -rf Voices/*
 `sudo rm -rf /private/var/log/*`
 
 ### User cache files
-'cd ~/Library/Caches/'
+`cd ~/Library/Caches/`

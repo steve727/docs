@@ -108,4 +108,21 @@ rm terraform_0.15.1_darwin_amd64.zip
 ### get public ip
     my_ip=$(dig +short myip.opendns.com @resolver1.opendns.com);
     echo $my_ip
-    
+
+### Disable SafeSleep Hibernation Mode
+```bash
+sudo pmset -a hibernatemode 0
+cd /private/var/vm/
+sudo rm sleepimage
+sudo touch sleepimage
+sudo chmod 000 /private/var/vm/sleepimage
+```
+### Enable SafeSleep
+`sudo pmset -a hibernatemode 3; sudo rm /private/var/vm/sleepimage`
+
+### Remove Speech Voices (876M	Voices)
+```bash
+cd /System/Library/Speech/
+sudo rm -rf Voices/*
+```
+

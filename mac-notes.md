@@ -125,4 +125,8 @@ sudo chmod 000 /private/var/vm/sleepimage
 cd /System/Library/Speech/
 sudo rm -rf Voices/*
 ```
+### Clear logs
+`sudo rm -rf /private/var/log/*`
 
+### User cache files
+'cd ~/Library/Caches/'

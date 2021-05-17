@@ -1,42 +1,43 @@
-### Install Homebrew 
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
-    
-`brew --version`
-    
+## macOS setup notes
+
+### Install Homebrew
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew --version
+```
+### Other brew commands
+```shell
+brew doctor
+brew cleanup
+```
+### Terraform
+```shell
+curl -O https://releases.hashicorp.com/terraform/0.15.3/terraform_0.15.3_darwin_amd64.zip
+unzip terraform_0.15.3_darwin_amd64.zip
+mv terraform /usr/local/bin/
+rm terraform_0.15.3_darwin_amd64.zip
+```
 ### Install developer tools
 `xcode-select --install`
 
 ### Openssl
-`brew install openssl`
-    
-`export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"`
-
-`export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"`
-
-`echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.zshrc`
-  
-`brew doctor`
-    
-`brew cleanup`
-
+```shell
+brew install openssl
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.zshrc
+```
 ### Magic packet
 `brew install wakeonlan`
     
-## macOS setup notes
+### az cli
+```shell   
+echo $PATH
+brew update && brew install azure-cli
+brew update && brew upgrade azure-cli
+```  
 
-```shell
-curl -O https://releases.hashicorp.com/terraform/0.15.1/terraform_0.15.1_darwin_amd64.zip
-unzip terraform_0.15.1_darwin_amd64.zip
-mv terraform /usr/local/bin/
-rm terraform_0.15.1_darwin_amd64.zip
-```
-    
-    echo $PATH
-
-    brew update && brew install azure-cli
-    brew update && brew upgrade azure-cli
-    
-    az upgrade
+az upgrade
     
 ### aws sam cli
     brew tap aws/tap
@@ -69,29 +70,28 @@ rm terraform_0.15.1_darwin_amd64.zip
     https://releases.hashicorp.com/consul/1.9.4/consul_1.9.4_darwin_amd64.zip
     
 ### postman api
-   https://dl.pstmn.io/download/latest/osx
+https://dl.pstmn.io/download/latest/osx
 
-   https://www.npmjs.com/package/newman 
-        
-        brew install newman
-        
-   https://www.npmjs.com/package/newman#command-line-options
-        
-   https://www.npmjs.com/package/newman
+https://www.npmjs.com/package/newman 
 
-### 1Password cli
-    
-[1Password cli](https://support.1password.com/command-line/)
+`brew install newman`
+        
+https://www.npmjs.com/package/newman#command-line-options
+        
+https://www.npmjs.com/package/newman
+
+### [1Password cli](https://support.1password.com/command-line/)
 
 [1Password cli reference](https://support.1password.com/command-line-reference/)
 
-    brew install --cask 1password-cli
+```shell
+brew install --cask 1password-cli
     
-    op signin my.ent.1password.com <email_address> <secret_key> [--raw]
-    export OP_SESSION_my"KEY"
-    eval $(op signin my)
-    op list items
-    
+op signin my.ent.1password.com <email_address> <secret_key> [--raw]
+export OP_SESSION_my"KEY"
+eval $(op signin my)
+op list items
+```  
 ### ssh cert for git 
     ssh-keygen -t ed25519 -C "email_address"
     eval "$(ssh-agent -s)"

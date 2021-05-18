@@ -1,18 +1,20 @@
 ### disable desktop
 `sudo systemctl set-default multi-user.target`
-
 ### enable desktop
 ```    
 sudo systemctl set-default graphical.target
 sudo reboot
 ```
-
+### locale settings
+```shell
+sudo vim /etc/locale.gen
+sudo locale-gen
+```
 ### zsh
 ```bash
 chsh -s /usr/bin/zsh 
 chsh -s `which zsh`
 ```
-
 ### sources
 `cat /etc/apt/sources.list`
 
@@ -57,10 +59,10 @@ remotedesktopmanager.free
 ```
 ### [Terraform](https://releases.hashicorp.com/terraform)
 ```bash
-curl -O https://releases.hashicorp.com/terraform/0.15.0/terraform_0.15.0_linux_amd64.zip
-unzip terraform_0.15.0_linux_amd64.zip
+curl -O https://releases.hashicorp.com/terraform/0.15.3/terraform_0.15.3_linux_amd64.zip
+unzip terraform_0.15.3_linux_amd64.zip
 sudo mv terraform /usr/local/bin
-rm terraform_0.15.0_linux_amd64.zip
+rm terraform_0.15.3_linux_amd64.zip
 ```
 ### mount ntfs drives (read)
 ```

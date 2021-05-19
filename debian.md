@@ -59,10 +59,10 @@ remotedesktopmanager.free
 ```
 ### [Terraform](https://releases.hashicorp.com/terraform)
 ```bash
-curl -O https://releases.hashicorp.com/terraform/0.15.3/terraform_0.15.3_linux_amd64.zip
-unzip terraform_0.15.3_linux_amd64.zip
+curl -O https://releases.hashicorp.com/terraform/0.15.4/terraform_0.15.4_linux_amd64.zip
+unzip terraform_0.15.4_linux_amd64.zip
 sudo mv terraform /usr/local/bin
-rm terraform_0.15.3_linux_amd64.zip
+rm terraform_0.15.4_linux_amd64.zip
 ```
 ### mount ntfs drives (read)
 ```

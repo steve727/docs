@@ -7,11 +7,6 @@ htop
 ls /mnt 
 /etc/fstab 
 ```
-### software
-```
-brew install htop
-```
-
 ### disable desktop
 `sudo systemctl set-default multi-user.target`
 ### enable desktop

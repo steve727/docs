@@ -10,12 +10,16 @@ brew --version
 brew doctor
 brew cleanup
 ```
+### VScode
+```
+https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal
+```
 ### Terraform
 ```shell
-curl -O https://releases.hashicorp.com/terraform/0.15.3/terraform_0.15.3_darwin_amd64.zip
-unzip terraform_0.15.3_darwin_amd64.zip
+curl -O https://releases.hashicorp.com/terraform/0.15.5/terraform_0.15.5_darwin_amd64.zip
+unzip terraform_0.15.5_darwin_amd64.zip
 mv terraform /usr/local/bin/
-rm terraform_0.15.3_darwin_amd64.zip
+rm terraform_0.15.5_darwin_amd64.zip
 ```
 ### Install developer tools
 `xcode-select --install`
@@ -80,18 +84,6 @@ https://www.npmjs.com/package/newman#command-line-options
         
 https://www.npmjs.com/package/newman
 
-### [1Password cli](https://support.1password.com/command-line/)
-
-[1Password cli reference](https://support.1password.com/command-line-reference/)
-
-```shell
-brew install --cask 1password-cli
-    
-op signin my.ent.1password.com <email_address> <secret_key> [--raw]
-export OP_SESSION_my"KEY"
-eval $(op signin my)
-op list items
-```  
 ### ssh cert for git 
     ssh-keygen -t ed25519 -C "email_address"
     eval "$(ssh-agent -s)"

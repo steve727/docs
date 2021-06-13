@@ -48,32 +48,25 @@ brew install aws-sam-cli
 sam --version
 brew install python@3.8
 brew upgrade aws-sam-cli
-```    
 echo 'export PATH="/usr/local/opt/python@3.8/bin:$PATH"' >> ~/.zshrc
 export LDFLAGS="-L/usr/local/opt/python@3.8/lib"
 export PKG_CONFIG_PATH="/usr/local/opt/python@3.8/lib/pkgconfig"
 ```
-```
 ### pyenv    
-    brew install pyenv
+`brew install pyenv`
     
 ### enable tab completion
-    terraform -install-autocomplete
-    
-### terraform plan landscape macOS
-    brew install terraform_landscape
-    terraform plan ... | landscape
+`terraform -install-autocomplete`
 
 ### Terraform commands
-    terraform fmt
-    terraform show
-    terraform apply
+`terraform fmt`
+`terraform show`
+`terraform apply`
 
 ### Consul
-    https://releases.hashicorp.com/consul/1.9.4/consul_1.9.4_darwin_amd64.zip
+https://releases.hashicorp.com/consul/1.9.4/consul_1.9.4_darwin_amd64.zip
     
-### postman api
-https://dl.pstmn.io/download/latest/osx
+### [Postman api](https://dl.pstmn.io/download/latest/osx)
 
 https://www.npmjs.com/package/newman 
 
@@ -83,23 +76,25 @@ https://www.npmjs.com/package/newman#command-line-options
         
 https://www.npmjs.com/package/newman
 
-### ssh cert for git 
-    ssh-keygen -t ed25519 -C "email_address"
-    eval "$(ssh-agent -s)"
-    touch ~/.ssh/config
-    open ~/.ssh/config
-        Host *
-        AddKeysToAgent yes
-        UseKeychain yes
-        IdentityFile ~/.ssh/id_ed25519    
-        ssh-add -K ~/.ssh/id_ed25519
-        
+### ssh cert for git
+``` 
+ssh-keygen -t ed25519 -C "email_address"
+eval "$(ssh-agent -s)"
+touch ~/.ssh/config
+open ~/.ssh/config
+Host *
+AddKeysToAgent yes
+UseKeychain yes
+IdentityFile ~/.ssh/id_ed25519    
+ssh-add -K ~/.ssh/id_ed25519
+```       
 [git api](https://docs.github.com/en/free-pro-team@latest/rest/reference)
 
 ### get public ip
-    my_ip=$(dig +short myip.opendns.com @resolver1.opendns.com);
-    echo $my_ip
-
+```
+my_ip=$(dig +short myip.opendns.com @resolver1.opendns.com);
+echo $my_ip
+```
 ### Disable SafeSleep Hibernation Mode
 ```bash
 sudo pmset -a hibernatemode 0

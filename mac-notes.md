@@ -5,6 +5,10 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew --version
 ```
+### software
+```
+brew install htop
+```
 ### Other brew commands
 ```shell
 brew doctor
@@ -16,10 +20,10 @@ https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal
 ```
 ### Terraform
 ```shell
-curl -O https://releases.hashicorp.com/terraform/0.15.5/terraform_0.15.5_darwin_amd64.zip
-unzip terraform_0.15.5_darwin_amd64.zip
+curl -O https://releases.hashicorp.com/terraform/1.0.0/terraform_1.0.0_darwin_amd64.zip
+unzip terraform_1.0.0_darwin_amd64.zip
 mv terraform /usr/local/bin/
-rm terraform_0.15.5_darwin_amd64.zip
+rm terraform_1.0.0_darwin_amd64.zip
 ```
 ### Install developer tools
 `xcode-select --install`
@@ -30,31 +34,26 @@ brew install openssl
 export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
 echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.zshrc
-```
-### Magic packet
-`brew install wakeonlan`
-    
+```   
 ### az cli
 ```shell   
 echo $PATH
 brew update && brew install azure-cli
 brew update && brew upgrade azure-cli
 ```  
-
-az upgrade
-    
 ### aws sam cli
-    brew tap aws/tap
-    brew install aws-sam-cli
-    sam --version
-    
-    brew install python@3.8
-    brew upgrade aws-sam-cli
-    
-    echo 'export PATH="/usr/local/opt/python@3.8/bin:$PATH"' >> ~/.zshrc
-    export LDFLAGS="-L/usr/local/opt/python@3.8/lib"
-    export PKG_CONFIG_PATH="/usr/local/opt/python@3.8/lib/pkgconfig"
-    
+```
+brew tap aws/tap
+brew install aws-sam-cli
+sam --version
+brew install python@3.8
+brew upgrade aws-sam-cli
+```    
+echo 'export PATH="/usr/local/opt/python@3.8/bin:$PATH"' >> ~/.zshrc
+export LDFLAGS="-L/usr/local/opt/python@3.8/lib"
+export PKG_CONFIG_PATH="/usr/local/opt/python@3.8/lib/pkgconfig"
+```
+```
 ### pyenv    
     brew install pyenv
     
@@ -112,7 +111,7 @@ sudo chmod 000 /private/var/vm/sleepimage
 ### Enable SafeSleep
 `sudo pmset -a hibernatemode 3; sudo rm /private/var/vm/sleepimage`
 
-### Remove Speech Voices (876M	Voices)
+### Remove Speech Voices (~876M	Voices)
 ```bash
 cd /System/Library/Speech/
 sudo rm -rf Voices/*

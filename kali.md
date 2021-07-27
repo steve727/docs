@@ -105,19 +105,24 @@
     sudo probequest -i wlan1mon 
     sudo airodump-ng wlan1mon
 
-### hcxdump / hcxtools
+### hcxdump/hcxtools
+```shell
     git clone https://github.com/ZerBea/hcxdumptool.git
     cd hcxdumptool
     make
     sudo make install
+    cd ~
     sudo apt-get install libcurl4-openssl-dev libssl-dev pkg-config zlib1g-dev
     git clone https://github.com/ZerBea/hcxtools.git
     cd hcxtools
     make
     sudo make install
+```
+### hcxdumptool
+    hcxdumptool -i wlan1 -o xname.pcapng --enable_status=1 
     
-    hcxdumptool -i wlan0 -o xname.pcapng --enable_status=1 
     hcxpcaptool -E xname-essid -I xidentity -U xusers xname.pcapng -o xname-out
+    
     hashcat -m 22000 xname-out -a 0 -w 3 -d 2 'rockyou.txt'
 
 ### seclists

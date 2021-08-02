@@ -21,17 +21,18 @@
 `sudo cat /var/log/openvpn-status.log`
 `sudo cat /var/log/openvpn.log`
 
-13. View vpn profiles `pivpn list`
+13. View vpn profiles:
+`pivpn list`
 
-### fail2ban
+### install fail2ban
 `sudo apt-get install fail2ban`
 
-View blocked ips: `sudo iptables -L -n`
+View blocked ips: 
+`sudo iptables -L -n`
 
 fail2ban jail: 
-```bash
-cat /var/log/fail2ban.log
-```
+`cat /var/log/fail2ban.log`
+
 ## [Pi-hole automated install](https://github.com/pi-hole/pi-hole/#one-step-automated-install)
 ```bash
 sudo curl -sSL https://install.pi-hole.net | bash

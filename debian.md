@@ -39,8 +39,9 @@ du -sh /var/cache/apt/archives
 sudo apt-get clean
 ```
 ### packages
-`apt install build-essential cmake curl libuv1-dev libssl-dev libhwloc-dev python3-pip sudo sysstat htop iotop dstat dnsutils atop ioping net-tools wget`
-
+```bash
+apt install build-essential cmake curl libuv1-dev libssl-dev libhwloc-dev python3-pip sudo sysstat htop iotop dstat dnsutils atop ioping net-tools wget
+```
 ### xmrig install
 ```
 sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev

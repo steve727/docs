@@ -1,3 +1,8 @@
+### ALFA AWUS036NHA
+```bash
+sudo apt-get install firmware-ath9k-htc
+```
+
 ### misc cmds
 ```
 du -sh

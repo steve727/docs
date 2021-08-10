@@ -7,6 +7,7 @@ brew --version
 ```
 ### software
 ```
+brew install go
 brew install htop
 brew install terraform
 brew install python3

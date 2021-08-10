@@ -26,13 +26,6 @@ brew cleanup
 ```
 https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal
 ```
-### Terraform
-```shell
-curl -O https://releases.hashicorp.com/terraform/1.0.0/terraform_1.0.0_darwin_amd64.zip
-unzip terraform_1.0.0_darwin_amd64.zip
-mv terraform /usr/local/bin/
-rm terraform_1.0.0_darwin_amd64.zip
-```
 ### Install developer tools
 `xcode-select --install`
 

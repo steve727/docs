@@ -8,6 +8,8 @@ brew --version
 ### software
 ```
 brew install htop
+brew install python3
+brew install jq
 ```
 ### Other brew commands
 ```shell

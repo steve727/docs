@@ -8,11 +8,17 @@ brew --version
 ### software
 ```
 brew install htop
+brew install terraform
 brew install python3
+brew install python-tk@3.9
 brew install jq
 ```
 ### Other brew commands
 ```shell
+rm '/usr/local/bin/terraform'
+brew link --overwrite terraform
+brew link terraform
+
 brew doctor
 brew cleanup
 ```

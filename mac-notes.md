@@ -9,6 +9,7 @@ brew --version
 ```
 brew install go
 brew install htop
+brew install --cask powershell
 brew install terraform
 brew install python3
 brew install python-tk@3.9

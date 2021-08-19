@@ -1,4 +1,4 @@
-Debian [Bullseye](https://www.debian.org/releases/bullseye/)
+[Install Grafana](https://grafana.com/docs/grafana/latest/installation/) on Debian [Bullseye](https://www.debian.org/releases/bullseye/)
 
 ### Grafana
 ```bash

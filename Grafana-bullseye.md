@@ -1,4 +1,4 @@
-[Install Grafana](https://grafana.com/docs/grafana/latest/installation/) on Debian [Bullseye](https://www.debian.org/releases/bullseye/)
+[Install Grafana](https://grafana.com/docs/grafana/latest/installation/) OSS on Debian [Bullseye](https://www.debian.org/releases/bullseye/)
 ```bash
 sudo apt-get install -y apt-transport-https gnupg2
 sudo apt-get install -y software-properties-common wget

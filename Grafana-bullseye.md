@@ -12,6 +12,11 @@ sudo /bin/systemctl enable grafana-server
 sudo /bin/systemctl start grafana-server
 sudo systemctl status grafana-server
 ```
+[Simple JSON Datasource Plugin](https://grafana.com/grafana/plugins/grafana-simple-json-datasource/)
+```bash
+sudo grafana-cli plugins install grafana-simple-json-datasource
+sudo service grafana-server restart
+```
 
 
 

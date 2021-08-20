@@ -22,13 +22,6 @@ sudo service grafana-server restart
 lsb_release -a
 sudo apt install mailutils
 sudo apt install postfix
-```
-Postfix (main.cf) is now set up with a default configuration.  If you need to
-make changes, edit /etc/postfix/main.cf (and others) as needed.  To view
-Postfix configuration values, see postconf(1).
-
-After modifying main.cf, be sure to run 'systemctl reload postfix'.
-```bash
 sudo vim /etc/postfix/main.cf
   
   inet_interfaces = loopback-only

@@ -38,3 +38,16 @@ systemctl reload postfix
 
 sudo vim /etc/aliases
 ```
+### Configure smtp username/password
+```bash
+sudo vim /etc/postfix/sasl_passwd
+  [smtp.example.com] username:password
+
+sudo postmap /etc/postfix/sasl_passwd
+sudo chown root:root /etc/postfix/sasl_passwd /etc/postfix/sasl_passwd.db
+sudo chmod 0600 /etc/postfix/sasl_passwd /etc/postfix/sasl_passwd.db
+  
+sudo vim /etc/postfix/main.cf 
+  relayhost = [smtp.example.com]:587
+  
+```

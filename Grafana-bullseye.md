@@ -30,7 +30,9 @@ Postfix configuration values, see postconf(1).
 After modifying main.cf, be sure to run 'systemctl reload postfix'.
 ```bash
 sudo vim /etc/postfix/main.cf
-  inet_interfaces = all to inet_interfaces = loopback-only
+  
+  inet_interfaces = loopback-only
+  mydestination = $myhostname, localhost.$your_domain, $your_domain
   
 systemctl reload postfix
 

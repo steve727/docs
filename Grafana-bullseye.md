@@ -158,7 +158,7 @@ sudo systemctl enable node_exporter
 
 systemctl status node_exporter.service 
 ```
-### Add node_exporter to Prometheus server
+### [Add node_exporter scrape config](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape_config) to Prometheus server
 ```
 sudo vim /etc/prometheus.yml
 

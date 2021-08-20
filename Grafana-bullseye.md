@@ -50,3 +50,10 @@ tail /var/log/mail.log
 sudo timedatectl set-timezone America/New_York
 ls -l /etc/localtime
 ```
+### [Prometheus](https://github.com/prometheus/prometheus/releases)
+```bash
+sudo groupadd --system prometheus
+sudo useradd -s /sbin/nologin --system -g prometheus prometheus
+sudo mkdir /var/lib/prometheus
+for i in rules rules.d files_sd; do sudo mkdir -p /etc/prometheus/${i}; done
+```

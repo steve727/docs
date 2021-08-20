@@ -42,5 +42,6 @@ sudo chmod 0600 /etc/postfix/sasl_passwd /etc/postfix/sasl_passwd.db
   
 sudo vim /etc/postfix/main.cf 
   relayhost = [smtp.example.com]:587
-  
+
+tail /var/log/mail.log
 ```

@@ -28,7 +28,7 @@ make changes, edit /etc/postfix/main.cf (and others) as needed.  To view
 Postfix configuration values, see postconf(1).
 
 After modifying main.cf, be sure to run 'systemctl reload postfix'.
-
+```bash
 sudo vim /etc/postfix/main.cf
 sudo vim /etc/aliases
-
+```

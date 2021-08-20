@@ -46,7 +46,7 @@ sudo vim /etc/postfix/main.cf
 tail /var/log/mail.log
 ```
 ### Set Timezone
-``bash
+```bash
 sudo timedatectl set-timezone America/New_York
 ls -l /etc/localtime
 ```

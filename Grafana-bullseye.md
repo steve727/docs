@@ -173,3 +173,14 @@ sudo systemctl restart prometheus
 grafana-cli plugins install briangann-gauge-panel
 sudo service grafana-server restart
 ```
+### [windows_exporter](https://github.com/prometheus-community/windows_exporter)
+```bash
+sudo vim /etc/prometheus.yml
+
+- job_name: 'win-exporter'
+    static_configs:
+      - targets: ['192.168.0.1:9182']
+
+sudo systemctl restart prometheus
+```
+

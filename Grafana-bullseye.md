@@ -168,3 +168,7 @@ sudo vim /etc/prometheus.yml
 
 sudo systemctl restart prometheus
 ```
+### [briangann-guage-panel plugin](https://grafana.com/grafana/plugins/briangann-gauge-panel/?tab=installation)
+```bash
+grafana-cli plugins install briangann-gauge-panel
+```

@@ -171,4 +171,5 @@ sudo systemctl restart prometheus
 ### [briangann-guage-panel plugin](https://grafana.com/grafana/plugins/briangann-gauge-panel/?tab=installation)
 ```bash
 grafana-cli plugins install briangann-gauge-panel
+sudo service grafana-server restart
 ```

@@ -184,3 +184,8 @@ sudo vim /etc/prometheus.yml
 sudo systemctl restart prometheus
 ```
 
+### [nginx](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/#installing-prebuilt-debian-packages)
+```bash
+sudo apt-get install nginx
+sudo nginx -v
+```

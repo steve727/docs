@@ -194,10 +194,12 @@ sudo nginx -v
 ```bash
 wget https://dl.influxdata.com/influxdb/releases/influxdb2-2.0.8-amd64.deb
 sudo dpkg -i influxdb2-2.0.8-amd64.deb
+sudo service influxdb start
 ```
 ### [telegraf](https://docs.influxdata.com/telegraf/latest/)
 ```bash
 wget https://dl.influxdata.com/telegraf/releases/telegraf_1.20.0~rc0-1_amd64.deb
 sudo dpkg -i telegraf_1.20.0~rc0-1_amd64.deb
+sudo service telegraf start
 ```
 

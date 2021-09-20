@@ -12,9 +12,14 @@ sudo /bin/systemctl enable grafana-server
 sudo /bin/systemctl start grafana-server
 sudo systemctl status grafana-server
 ```
-### [Simple JSON Datasource Plugin](https://grafana.com/grafana/plugins/grafana-simple-json-datasource/)
+### [Simple JSON Datasource plugin](https://grafana.com/grafana/plugins/grafana-simple-json-datasource/)
 ```bash
 sudo grafana-cli plugins install grafana-simple-json-datasource
+sudo service grafana-server restart
+```
+### grafana-piechart-panel plugin
+```bash
+sudo grafana-cli plugins install grafana-piechart-panel
 sudo service grafana-server restart
 ```
 ### Install Postfix as a send-only smtp relay

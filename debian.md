@@ -39,9 +39,13 @@ chsh -s `which zsh`
 `ls | xargs -I {} du -shx {}`
 
 ### clear apt cache
-```
+```bash
 du -sh /var/cache/apt/archives
 sudo apt-get clean
+```
+### List packages installed
+```bash
+apt list --installed
 ```
 ### packages
 ```bash

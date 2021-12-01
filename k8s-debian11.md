@@ -66,6 +66,7 @@ sudo systemctl enable docker
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 
+### init cluster on Master node
 sudo kubeadm init --pod-network-cidr 10.10.0.0/16
 
 mkdir -p $HOME/.kube

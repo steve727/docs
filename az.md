@@ -1,9 +1,11 @@
-# az cli
-
-## az version
+# az cli commands
 ```bash
 az version
 az upgrade
+
+az resource list --output table
+az resource list --resource-type 'Microsoft.Sql/Servers/databases' --output table
+az resource list --query "[?contains(name, 'cosmos')]" --output yaml
 ```
 
 [![Launch Cloud Shell](https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/launchcloudshell.png "Launch Cloud Shell")](https://shell.azure.com)

@@ -12,9 +12,14 @@ sudo /bin/systemctl enable grafana-server
 sudo /bin/systemctl start grafana-server
 sudo systemctl status grafana-server
 ```
-### [Simple JSON Datasource Plugin](https://grafana.com/grafana/plugins/grafana-simple-json-datasource/)
+### [Simple JSON Datasource plugin](https://grafana.com/grafana/plugins/grafana-simple-json-datasource/)
 ```bash
 sudo grafana-cli plugins install grafana-simple-json-datasource
+sudo service grafana-server restart
+```
+### grafana-piechart-panel plugin
+```bash
+sudo grafana-cli plugins install grafana-piechart-panel
 sudo service grafana-server restart
 ```
 ### Install Postfix as a send-only smtp relay
@@ -188,6 +193,7 @@ sudo systemctl restart prometheus
 ```bash
 sudo apt-get install nginx
 sudo nginx -v
+<<<<<<< HEAD
 
 cd /etc/nginx/conf.d
 
@@ -197,3 +203,20 @@ sudo openssl dhparam -out /etc/nginx/dhparam.pem 4096
 
 
 ```
+=======
+```
+
+### [influxdb](https://portal.influxdata.com/downloads/)
+```bash
+wget https://dl.influxdata.com/influxdb/releases/influxdb2-2.0.8-amd64.deb
+sudo dpkg -i influxdb2-2.0.8-amd64.deb
+sudo service influxdb start
+```
+### [telegraf](https://docs.influxdata.com/telegraf/latest/)
+```bash
+wget https://dl.influxdata.com/telegraf/releases/telegraf_1.20.0~rc0-1_amd64.deb
+sudo dpkg -i telegraf_1.20.0~rc0-1_amd64.deb
+sudo service telegraf start
+```
+
+>>>>>>> 88c645ae0fa920d9413eac8c968f3db201b13a48

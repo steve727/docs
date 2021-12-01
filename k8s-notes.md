@@ -40,8 +40,8 @@ EOF
 `sudo apt-get install -y kubelet=1.20.1-00 kubeadm=1.20.1-00 kubectl=1.20.1-00`
 
 ## Control plane nodes:
+`sudo kubeadm init --pod-network-cidr 10.10.0.0/16`
 
-`sudo kubeadm init --pod-network-cidr x.x.x.x/16`
 ```shell
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config

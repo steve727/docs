@@ -1,7 +1,7 @@
 ### k8s cluster on debian 11
 
 ```shell
-sudo vim /etc/hosts
+sudo vim /etc/hosts ### add nodes ip addresses
 lsmod | grep br_netfilter
 sudo modprobe br_netfilter
 

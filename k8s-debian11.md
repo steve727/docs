@@ -72,4 +72,8 @@ mkdir -p $HOME/.kube
   sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
   sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
+curl https://docs.projectcalico.org/manifests/calico.yaml -O
+vim calico.yaml
+  ### Uncomment the CALICO_IPV4POOL_CIDR variable in the manifest and set it to the same value as your chosen pod CIDR (10.10.0.0/16) ###
+
 ```

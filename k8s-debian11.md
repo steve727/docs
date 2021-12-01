@@ -16,6 +16,7 @@ EOF
 
 sudo sysctl --system
 
+### docker install ###
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg lsb-release
@@ -25,13 +26,16 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo groupadd docker
 sudo usermod -aG docker $USER
-sudo reboot
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
 sudo reboot
 docker version
+
+### docker-compose install ###
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 docker-compose --version
+
+### k8s install
 sudo apt-get update
 sudo apt-get install -y apt-transport-https ca-certificates curl
 sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg

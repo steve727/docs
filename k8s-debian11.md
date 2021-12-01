@@ -76,6 +76,7 @@ mkdir -p $HOME/.kube
 ### Calico setup - Uncomment the CALICO_IPV4POOL_CIDR variable in the manifest and set pod CIDR(10.10.0.0/16) ###
 curl https://docs.projectcalico.org/manifests/calico.yaml -O
 vim calico.yaml
- 
+
+kubectl get nodes
 
 ```

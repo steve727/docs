@@ -65,4 +65,6 @@ EOF
 sudo systemctl enable docker
 sudo systemctl daemon-reload
 sudo systemctl restart docker
+
+sudo kubeadm init --pod-network-cidr 10.10.0.0/16
 ```

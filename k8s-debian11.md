@@ -1,6 +1,21 @@
 ### k8s cluster on debian 11
 
-```bash
+```shell
+sudo vim /etc/hosts
+lsmod | grep br_netfilter
+sudo modprobe br_netfilter
+
+cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
+br_netfilter
+EOF
+
+cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+EOF
+
+sudo sysctl --system
+
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg lsb-release

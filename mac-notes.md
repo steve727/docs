@@ -14,7 +14,7 @@ brew install terraform
 brew install python3
 brew install python-tk@3.9
 brew install jq
-brew install graphicsmagick # photoflare
+brew install graphicsmagick 
 ```
 ### Other brew commands
 ```shell

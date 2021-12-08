@@ -84,4 +84,8 @@ kubectl get nodes
 apt-mark unhold kubeadm
 apt-get update && apt-get install -y kubeadm=1.23.0-00 && \
 apt-mark hold kubeadm
+kubeadm version
+kubeadm upgrade plan
+kubeadm upgrade apply v1.23.0
+
 ```

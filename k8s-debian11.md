@@ -119,3 +119,4 @@ apt-get update && apt-get install -y kubelet=1.23.0-00 kubectl=1.23.0-00 && \
 apt-mark hold kubelet kubectl
 kubectl uncordon kube-worker
 ```
+

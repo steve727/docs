@@ -78,5 +78,10 @@ curl https://docs.projectcalico.org/manifests/calico.yaml -O
 vim calico.yaml
 
 kubectl get nodes
-
+```
+### upgrade to 1.23.0-00
+```bash
+apt-mark unhold kubeadm
+apt-get update && apt-get install -y kubeadm=1.23.0-00 && \
+apt-mark hold kubeadm
 ```

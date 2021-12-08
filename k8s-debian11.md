@@ -79,7 +79,7 @@ vim calico.yaml
 
 kubectl get nodes
 ```
-### upgrade to 1.23.0-00
+### upgrade to v1.23.0-00 - master controle plane
 ```bash
 apt-mark unhold kubeadm
 apt-get update && apt-get install -y kubeadm=1.23.0-00 && \
@@ -87,5 +87,35 @@ apt-mark hold kubeadm
 kubeadm version
 kubeadm upgrade plan
 kubeadm upgrade apply v1.23.0
+
+kubectl drain kube-master --ignore-daemonsets
+
+apt-mark unhold kubelet kubectl && \
+apt-get update && apt-get install -y kubelet=1.23.0-00 kubectl=1.23.0-00 && \
+apt-mark hold kubelet kubectl
+
+sudo systemctl daemon-reload
+sudo systemctl restart kubelet
+
+kubectl uncordon kube-master
+```
+
+### upgrade worker nodes
+```bash
+
+apt-mark unhold kubeadm && \
+apt-get update && apt-get install -y kubeadm=1.23.0-00 && \
+apt-mark hold kubeadm
+
+sudo kubeadm upgrade node
+  ## kubectl -n kube-system get cm kubeadm-config -o yaml
+
+## From master
+kubectl drain kube-worker --ignore-daemonsets --delete-emptydir-data
+
+## On worker nodes
+apt-mark unhold kubelet kubectl && \
+apt-get update && apt-get install -y kubelet=1.23.0-00 kubectl=1.23.0-00 && \
+apt-mark hold kubelet kubectl
 
 ```

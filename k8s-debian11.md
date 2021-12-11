@@ -79,7 +79,7 @@ vim calico.yaml
 
 kubectl get nodes
 ```
-### upgrade to v1.23.0-00 - master controle plane
+### upgrade to v1.23.0-00 - master
 ```bash
 apt-mark unhold kubeadm
 apt-get update && apt-get install -y kubeadm=1.23.0-00 && \

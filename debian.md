@@ -1,7 +1,7 @@
 ### snmpd
 ```bash
 sudo apt-get update; sudo apt-get install snmpd
-sudo vim /etc/snmpd/snmpd.conf
+sudo vim /etc/snmp/snmpd.conf
     # modify as necessary
 sudo /etc/init.d/snmpd restart 
 ```

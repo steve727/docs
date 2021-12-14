@@ -1,3 +1,11 @@
+### snmpd
+```bash
+sudo apt-get update; sudo apt-get install snmpd
+sudo vim /etc/snmpd/snmpd.conf
+    # modify as necessary
+sudo /etc/init.d/snmpd restart 
+```
+
 ### ALFA AWUS036NHA
 ```bash
 sudo apt-get install firmware-ath9k-htc

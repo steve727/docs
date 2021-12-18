@@ -218,5 +218,3 @@ wget https://dl.influxdata.com/telegraf/releases/telegraf_1.20.0~rc0-1_amd64.deb
 sudo dpkg -i telegraf_1.20.0~rc0-1_amd64.deb
 sudo service telegraf start
 ```
-
->>>>>>> 88c645ae0fa920d9413eac8c968f3db201b13a48

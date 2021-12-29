@@ -107,9 +107,9 @@ kubectl uncordon kube-master
 ### upgrade worker nodes
 ```bash
 
-apt-mark unhold kubeadm && \
-apt-get update && apt-get install -y kubeadm=1.23.0-00 && \
-apt-mark hold kubeadm
+sudo apt-mark unhold kubeadm && \
+sudo apt-get update && sudo apt-get install -y kubeadm=1.23.1-00 && \
+sudo apt-mark hold kubeadm
 
 sudo kubeadm upgrade node
   ## kubectl -n kube-system get cm kubeadm-config -o yaml
@@ -118,9 +118,9 @@ sudo kubeadm upgrade node
 kubectl drain kube-worker --ignore-daemonsets --delete-emptydir-data
 
 ## On worker nodes
-apt-mark unhold kubelet kubectl && \
-apt-get update && apt-get install -y kubelet=1.23.0-00 kubectl=1.23.0-00 && \
-apt-mark hold kubelet kubectl
+sudo apt-mark unhold kubelet kubectl && \
+sudo apt-get update && sudo apt-get install -y kubelet=1.23.1-00 kubectl=1.23.1-00 && \
+sudo apt-mark hold kubelet kubectl
 kubectl uncordon kube-worker
 ```
 

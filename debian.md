@@ -1,3 +1,8 @@
+### packages
+```bash
+apt install build-essential cmake curl libuv1-dev libssl-dev libhwloc-dev python3-pip sudo /
+sysstat htop iotop dstat dnsutils atop ioping net-tools wget iftop nload
+```
 ### snmpd
 ```bash
 sudo apt-get update; sudo apt-get install snmpd
@@ -54,11 +59,6 @@ sudo apt-get clean
 ### List packages installed
 ```bash
 apt list --installed
-```
-### packages
-```bash
-apt install build-essential cmake curl libuv1-dev libssl-dev libhwloc-dev python3-pip sudo /
-sysstat htop iotop dstat dnsutils atop ioping net-tools wget iftop
 ```
 ### xmrig install
 ```

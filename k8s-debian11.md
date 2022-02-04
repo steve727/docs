@@ -83,16 +83,17 @@ vim calico.yaml
 
 kubectl get nodes
 ```
-### Upgrading kube-master to v1.23.3-00
+### Upgrading kube-master to v1.23.3
 ```bash
 sudo apt-mark unhold kubeadm
 sudo apt-get update && apt-get install -y kubeadm=1.23.3-00 && \
 sudo apt-mark hold kubeadm
 kubeadm version
 sudo kubeadm upgrade plan
-sudo kubeadm upgrade apply v1.23.3-00
+sudo kubeadm upgrade apply v1.23.3
 
-kubectl drain kube-master --ignore-daemonsets
+sudo kubectl drain kube-master --ignore-daemonsets --delete-emptydir-data
+
 
 apt-mark unhold kubelet kubectl && \
 apt-get update && apt-get install -y kubelet=1.23.3-00 kubectl=1.23.3-00 && \

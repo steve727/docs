@@ -42,5 +42,5 @@ sudo curl -sSL https://install.pi-hole.net | bash
 
 ### Update Pi-hole
 ```bash
-pihole -up`
+pihole -up
 ```

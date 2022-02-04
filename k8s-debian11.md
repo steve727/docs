@@ -120,6 +120,8 @@ kubectl drain kube-worker --ignore-daemonsets --delete-emptydir-data
 sudo apt-mark unhold kubelet kubectl && \
 sudo apt-get update && sudo apt-get install -y kubelet=1.23.3-00 kubectl=1.23.3-00 && \
 sudo apt-mark hold kubelet kubectl
+
+## From master
 kubectl uncordon kube-worker
 ```
 

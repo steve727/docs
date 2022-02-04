@@ -91,15 +91,13 @@ sudo apt-mark hold kubeadm
 kubeadm version
 sudo kubeadm upgrade plan
 sudo kubeadm upgrade apply v1.23.3
-
 sudo kubectl drain kube-master --ignore-daemonsets --delete-emptydir-data
 
+sudo apt-mark unhold kubelet kubectl && \
+sudo apt-get update && sudo apt-get install -y kubelet=1.23.3-00 kubectl=1.23.3-00 && \
+sudo apt-mark hold kubelet kubectl
 
-apt-mark unhold kubelet kubectl && \
-apt-get update && apt-get install -y kubelet=1.23.3-00 kubectl=1.23.3-00 && \
-apt-mark hold kubelet kubectl
-
-sudo systemctl daemon-reload
+sudo systemctl daemon-reload && \
 sudo systemctl restart kubelet
 
 kubectl uncordon kube-master

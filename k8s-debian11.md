@@ -83,7 +83,7 @@ vim calico.yaml
 
 kubectl get nodes
 ```
-### Upgrading kube-master to v1.23.3
+### Upgrading kube-master control plane to v1.23.3
 ```bash
 sudo apt-mark unhold kubeadm
 sudo apt-get update && apt-get install -y kubeadm=1.23.3-00 && \
@@ -103,16 +103,13 @@ sudo systemctl restart kubelet
 kubectl uncordon kube-master
 ```
 
-### upgrade worker nodes
+### upgrade worker nodes to v1.23.3
 ```bash
-
 sudo apt-mark unhold kubeadm && \
 sudo apt-get update && sudo apt-get install -y kubeadm=1.23.3-00 && \
 sudo apt-mark hold kubeadm
-
 sudo kubeadm upgrade node
   ## kubectl -n kube-system get cm kubeadm-config -o yaml
-
 ## From master
 kubectl drain kube-worker --ignore-daemonsets --delete-emptydir-data
 
@@ -124,4 +121,12 @@ sudo apt-mark hold kubelet kubectl
 ## From master
 kubectl uncordon kube-worker
 ```
+
+### If the token is expired, use 'kubeadm token create' on the master node to create a new valid token.
+```bash
+kubeadm token create
+kubeadm token list
+```
+
+
 

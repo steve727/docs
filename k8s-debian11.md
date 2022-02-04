@@ -83,19 +83,19 @@ vim calico.yaml
 
 kubectl get nodes
 ```
-### upgrade to v1.23.0-00 - master
+### Upgrading kube-master to v1.23.3-00
 ```bash
-apt-mark unhold kubeadm
-apt-get update && apt-get install -y kubeadm=1.23.0-00 && \
-apt-mark hold kubeadm
+sudo apt-mark unhold kubeadm
+sudo apt-get update && apt-get install -y kubeadm=1.23.3-00 && \
+sudo apt-mark hold kubeadm
 kubeadm version
-kubeadm upgrade plan
-kubeadm upgrade apply v1.23.0
+sudo kubeadm upgrade plan
+sudo kubeadm upgrade apply v1.23.3-00
 
 kubectl drain kube-master --ignore-daemonsets
 
 apt-mark unhold kubelet kubectl && \
-apt-get update && apt-get install -y kubelet=1.23.0-00 kubectl=1.23.0-00 && \
+apt-get update && apt-get install -y kubelet=1.23.3-00 kubectl=1.23.3-00 && \
 apt-mark hold kubelet kubectl
 
 sudo systemctl daemon-reload
@@ -108,7 +108,7 @@ kubectl uncordon kube-master
 ```bash
 
 sudo apt-mark unhold kubeadm && \
-sudo apt-get update && sudo apt-get install -y kubeadm=1.23.1-00 && \
+sudo apt-get update && sudo apt-get install -y kubeadm=1.23.3-00 && \
 sudo apt-mark hold kubeadm
 
 sudo kubeadm upgrade node
@@ -119,7 +119,7 @@ kubectl drain kube-worker --ignore-daemonsets --delete-emptydir-data
 
 ## On worker nodes
 sudo apt-mark unhold kubelet kubectl && \
-sudo apt-get update && sudo apt-get install -y kubelet=1.23.1-00 kubectl=1.23.1-00 && \
+sudo apt-get update && sudo apt-get install -y kubelet=1.23.3-00 kubectl=1.23.3-00 && \
 sudo apt-mark hold kubelet kubectl
 kubectl uncordon kube-worker
 ```

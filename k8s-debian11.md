@@ -90,7 +90,7 @@ sudo apt-get update && apt-get install -y kubeadm=1.23.4-00 && \
 sudo apt-mark hold kubeadm
 kubeadm version
 sudo kubeadm upgrade plan
-sudo kubeadm upgrade apply v1.23.3
+sudo kubeadm upgrade apply v1.23.4
 sudo kubectl drain kube-master --ignore-daemonsets --delete-emptydir-data
 
 sudo apt-mark unhold kubelet kubectl && \

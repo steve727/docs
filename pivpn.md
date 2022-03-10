@@ -1,4 +1,4 @@
-## Raspberry Pi 3 OpenVPN setup on Raspberry pi 3 using MacOS
+## OpenVPN setup on Raspberry Pi
 
 1. Download the [Raspberry Pi Imager](https://www.raspberrypi.org/software/) and flash the sd card with the [Debian Buster lite image](https://downloads.raspberrypi.org/raspios_lite_armhf/images/raspios_lite_armhf-2021-01-12/2021-01-11-raspios-buster-armhf-lite.zip).
 2. Default login is pi/raspberry

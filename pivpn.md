@@ -24,16 +24,16 @@
 13. View vpn profiles:
 `pivpn list`
 
-### install fail2ban
+### Install fail2ban
 `sudo apt-get install fail2ban`
 
-View blocked ips: 
+### View blocked ips: 
 `sudo iptables -L -n`
 
-fail2ban jail: 
+### fail2ban jail: 
 `cat /var/log/fail2ban.log`
 
-## [Pi-hole automated install](https://github.com/pi-hole/pi-hole/#one-step-automated-install)
+### [Pi-hole automated install](https://github.com/pi-hole/pi-hole/#one-step-automated-install)
 ```bash
 sudo curl -sSL https://install.pi-hole.net | bash
 ```
@@ -43,4 +43,8 @@ sudo curl -sSL https://install.pi-hole.net | bash
 ### Update Pi-hole
 ```bash
 pihole -up
+```
+### Add vpn profiles
+```bash
+pivpn add nopass
 ```

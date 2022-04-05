@@ -103,19 +103,20 @@ sudo systemctl restart kubelet
 kubectl uncordon kube-master
 ```
 
-### upgrade worker nodes to v1.23.4
+### upgrade worker nodes to v1.23.5
 ```bash
 sudo apt-mark unhold kubeadm && \
-sudo apt-get update && sudo apt-get install -y kubeadm=1.23.4-00 && \
+sudo apt-get update && sudo apt-get install -y kubeadm=1.23.5-00 && \
 sudo apt-mark hold kubeadm
 sudo kubeadm upgrade node
   ## kubectl -n kube-system get cm kubeadm-config -o yaml
+
 ## From master
 kubectl drain kube-worker --ignore-daemonsets --delete-emptydir-data
 
 ## On worker nodes
 sudo apt-mark unhold kubelet kubectl && \
-sudo apt-get update && sudo apt-get install -y kubelet=1.23.4-00 kubectl=1.23.4-00 && \
+sudo apt-get update && sudo apt-get install -y kubelet=1.23.5-00 kubectl=1.23.5-00 && \
 sudo apt-mark hold kubelet kubectl
 
 ## From master

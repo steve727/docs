@@ -129,5 +129,9 @@ kubeadm token create
 kubeadm token list
 ```
 
-
+### Get secrets and token
+```bash
+kubectl get secrets -n kube-system
+kubectl get secret $SECRET_NAME -n=kube-system -o json | jq -r '.data["token"]' | base64 -d > user_token.txt
+```
 

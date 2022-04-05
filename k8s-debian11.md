@@ -135,3 +135,12 @@ kubectl get secrets -n kube-system
 kubectl get secret $SECRET_NAME -n=kube-system -o json | jq -r '.data["token"]' | base64 -d > user_token.txt
 ```
 
+### Get service accounts
+```bash
+kubectl get serviceaccount -n kube-system
+```
+
+```
+kubectl -n kubernetes-dashboard get secret $(kubectl -n kubernetes-dashboard get sa/admin-user -o jsonpath="{.secrets[0].name}") -o go-template="{{.data.token | base64decode}}"
+```
+

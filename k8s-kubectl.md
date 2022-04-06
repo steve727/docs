@@ -23,3 +23,10 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.5.0/a
 kubectl proxy
 ```
 ### [Access the dashboard](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/login)
+
+
+### Create hello-node deployment
+```bash
+kubectl create deployment hello-node --image=k8s.gcr.io/echoserver:1.4
+```
+

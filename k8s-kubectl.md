@@ -28,5 +28,11 @@ kubectl proxy
 ### Create hello-node deployment
 ```bash
 kubectl create deployment hello-node --image=k8s.gcr.io/echoserver:1.4
+kubectl get deployments
+kubectl get pods
+kubectl get events
+kubectl config view
+kubectl expose deployment hello-node --type=LoadBalancer --port=8080
+kubectl get services
 ```
 

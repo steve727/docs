@@ -163,3 +163,8 @@ spec:
 ```bash
 kubectl apply -f deployment.yaml
 ```
+
+### Check the deployment status
+```bash
+kubectl get deployments -n devops-tools
+```

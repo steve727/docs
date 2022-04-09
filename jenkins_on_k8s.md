@@ -157,5 +157,9 @@ spec:
         - name: jenkins-data
           persistentVolumeClaim:
               claimName: jenkins-pv-claim
-  ```
-  
+```
+
+### Create the deployment
+```bash
+kubectl apply -f deployment.yaml
+```

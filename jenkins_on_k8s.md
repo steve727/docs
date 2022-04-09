@@ -172,3 +172,28 @@ kubectl get deployments -n devops-tools
 ```bash
 kubectl describe deployments --namespace=devops-tools
 ```
+
+### Create service.yaml and copy the following service manifest
+```bash
+apiVersion: v1
+kind: Service
+metadata:
+  name: jenkins-service
+  namespace: devops-tools
+  annotations:
+      prometheus.io/scrape: 'true'
+      prometheus.io/path:   /
+      prometheus.io/port:   '8080'
+spec:
+  selector: 
+    app: jenkins-server
+  type: NodePort  
+  ports:
+    - port: 8080
+      targetPort: 8080
+      nodePort: 32000
+```
+```bash
+kubectl apply -f service.yaml
+```
+

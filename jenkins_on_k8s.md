@@ -168,3 +168,7 @@ kubectl apply -f deployment.yaml
 ```bash
 kubectl get deployments -n devops-tools
 ```
+### Get the deployment details
+```bash
+kubectl describe deployments --namespace=devops-tools
+```

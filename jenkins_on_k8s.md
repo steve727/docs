@@ -196,4 +196,5 @@ spec:
 ```bash
 kubectl apply -f service.yaml
 ```
+http://<node-ip>:32000
 

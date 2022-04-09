@@ -36,3 +36,6 @@ subjects:
   name: jenkins-admin
   namespace: devops-tools
 ```
+
+### Create the service account using kubectl
+`kubectl apply -f serviceAccount.yaml`

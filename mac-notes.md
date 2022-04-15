@@ -7,7 +7,8 @@ brew --version
 ```
 ### Software
 ```bash
-brew install go
+brew install go 
+brew install kubectl
 brew install htop
 brew install --cask powershell
 ```

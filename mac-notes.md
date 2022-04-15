@@ -1,16 +1,19 @@
 ## macOS setup notes
 
 ### Install Homebrew
-```shell
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew --version
 ```
 ### Software
-```
+```bash
 brew install go
 brew install htop
 brew install --cask powershell
-## Add-Content -Path $PROFILE.CurrentUserAllHosts -Value '$(/usr/local/bin/brew shellenv) | Invoke-Expression'
+```
+### To use Homebrew in PowerShell run: 
+`Add-Content -Path $PROFILE.CurrentUserAllHosts -Value '$(/usr/local/bin/brew shellenv) | Invoke-Expression'`
+```bash
 brew install terraform
 brew install python3
 brew install python-tk@3.9
@@ -18,7 +21,7 @@ brew install jq
 brew install graphicsmagick 
 ```
 ### Other brew commands
-```shell
+```bash
 rm '/usr/local/bin/terraform'
 brew link --overwrite terraform
 brew link terraform

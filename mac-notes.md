@@ -30,22 +30,22 @@ brew link terraform
 brew doctor
 brew cleanup
 ```
-### VScode
-```
-https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal
+### [VScode](https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal)
+```bash
+brew install vscode
 ```
 ### Install developer tools
 `xcode-select --install`
 
 ### Openssl
-```shell
+```bash
 brew install openssl
 export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
 echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.zshrc
 ```   
 ### az cli
-```shell   
+```bash
 echo $PATH
 brew update && brew install azure-cli
 brew update && brew upgrade azure-cli
@@ -86,7 +86,7 @@ https://www.npmjs.com/package/newman#command-line-options
 https://www.npmjs.com/package/newman
 
 ### ssh cert for git
-``` 
+```bash
 ssh-keygen -t ed25519 -C "email_address"
 eval "$(ssh-agent -s)"
 touch ~/.ssh/config

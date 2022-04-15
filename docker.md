@@ -185,3 +185,8 @@ docker stop webtemplate
     tar xf <BACKUP_FILE_NAME>.tgz .
     /tmp/website_2021-03-22-16-23.tgz
     ls -l
+
+### Prune all images
+```bash
+docker image prune --all --force
+```

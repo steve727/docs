@@ -12,6 +12,7 @@ wsl --list --online
 wsl --install -d Debian
 wsl --update
 wsl --shutdown
+wsl -s Debian
 ```
 
 [Microsoft Terminal](https://github.com/microsoft/terminal)

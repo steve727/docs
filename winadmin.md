@@ -10,13 +10,9 @@ wsl --install
 shutdown /r /t 0
 wsl --list --online
 wsl --install -d Debian
-
-
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+wsl --update
+wsl --shutdown
 ```
-[WSL2 Linux kernel update package for x64 machines](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 
 [Microsoft Terminal](https://github.com/microsoft/terminal)
 

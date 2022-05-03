@@ -18,7 +18,15 @@ wsl -d Debian
 wsl -u root
 ```
 
-
+Upgrade Debian WSL to Bullseye
+```bash
+vim /etc/apt/sources.list
+# Replace stretch with bullseye #
+sudo apt clean && sudo apt update
+sudo apt full-upgrade
+sudo apt autoremove
+cat /etc/os-release
+```
 
 [Microsoft Terminal](https://github.com/microsoft/terminal)
 

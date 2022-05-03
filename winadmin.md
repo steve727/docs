@@ -7,6 +7,7 @@ Install-WindowsFeature -Name RSAT-AD-Powershell
 WSL2
 ```
 wsl --install
+shutdown /r /t 0
 wsl --list --online
 wsl --install -d Debian
 

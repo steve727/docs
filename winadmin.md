@@ -16,6 +16,7 @@ wsl -s Debian
 
 wsl -d Debian
 wsl -u root
+wsl --unregister Ubuntu
 ```
 
 Upgrade Debian WSL to Bullseye

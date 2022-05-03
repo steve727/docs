@@ -13,7 +13,12 @@ wsl --install -d Debian
 wsl --update
 wsl --shutdown
 wsl -s Debian
+
+wsl -d Debian
+wsl -u root
 ```
+
+
 
 [Microsoft Terminal](https://github.com/microsoft/terminal)
 

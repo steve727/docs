@@ -15,9 +15,10 @@
 		static domain_name_servers=x.x.x.x
 
 9. [PiVPN](https://www.pivpn.io/) install `curl -L https://install.pivpn.io | bash`
-10. Run `pivpn add nopass` to add user profiles which are stored in `/home/pi/ovpns`
-11. Install the openvpn client on a device and import user profile.
-12. Logs:
+10. [Wireguard reference](https://docs.pivpn.io/wireguard/)
+11. Run `pivpn add nopass` to add user profiles which are stored in `/home/pi/ovpns`
+12. Install the openvpn client on a device and import user profile.
+13. Logs:
 `sudo cat /var/log/openvpn-status.log`
 `sudo cat /var/log/openvpn.log`
 

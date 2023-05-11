@@ -1,6 +1,6 @@
 ## OpenVPN setup on Raspberry Pi
 
-1. Download the [Raspberry Pi Imager](https://www.raspberrypi.org/software/) and flash the sd card with the [Debian Buster lite image](https://downloads.raspberrypi.org/raspios_lite_armhf/images/raspios_lite_armhf-2021-01-12/2021-01-11-raspios-buster-armhf-lite.zip).
+1. Download the [Raspberry Pi Imager](https://www.raspberrypi.org/software/) and flash the sd card with the [Raspberry Pi OS Lite Image](https://downloads.raspberrypi.org/raspios_lite_armhf/images/raspios_lite_armhf-2023-05-03/2023-05-03-raspios-bullseye-armhf-lite.img.xz).
 2. Default login is pi/raspberry
 3. Change pi user password
 4. Set localization options to en-US utf8
